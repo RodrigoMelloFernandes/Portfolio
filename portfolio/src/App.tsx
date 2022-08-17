@@ -1,9 +1,10 @@
+import Header from './pages/Header';
 
 
 function App() {
   return (
     <>
-      <p>teste</p>
+      <Header />
     </>
   );
 }
