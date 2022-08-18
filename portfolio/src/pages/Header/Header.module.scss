@@ -45,33 +45,73 @@
     }
   }
   
-  &__paddingContainer {
-    @extend .paddingContainer;
-    
+  &__paddingBox {
+    @extend .paddingBox;
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(flex-start, space-between);
+    width: 100%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, space-between);
+    }
   }
 
-  &__headerTitleBox{
+  &__hexagonBox{
+    position: relative;
+    width: 45%;
+    height: 28rem;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      position: relative;
+      height: 22rem;
+      width: 22%;
+    }
+  }
+
+  &__TitleBox{
     @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(center, center);
+    @include alignItems-justifyContent(flex-end, center);
+    width: 55%;
+
     &___title{
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: $White;
       font-weight: 700;
       opacity: 0.9;
       text-align: end;
+      margin-bottom: 10%;
+      margin-top: 15%;
+
+      &:nth-child(2){
+        font-size: .7rem;
+        margin-bottom: 10%;
+        color: $Black;
+        text-align: end;
+        margin-top: 0%;
+      }
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       font-size: 5rem;
+      margin-bottom: 0%;
+      margin-top: 0%;
       }
     }
 
     &___subtitle{
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: $White;
       font-weight: 600;
       opacity: 0.9;
       line-height: 1.5rem;
       text-align: end;
+      margin-bottom: 10%;
+      &:nth-of-type(2){
+        font-size: .7rem;
+        margin-bottom: 10%;
+        color: $Black;
+        text-align: end;
+      }
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
         font-size: 2.5rem; 

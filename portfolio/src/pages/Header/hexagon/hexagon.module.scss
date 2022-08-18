@@ -1,6 +1,6 @@
 @import '../../../scss/styles.scss';
 
-.hexagonContainer{
+.hexagon{
   width: 100px;
   height: 55px;
   background: #2c2c2c;
@@ -38,22 +38,45 @@
   }
 
   &:first-child{
-    //background-color: red;
-    left: 1rem;
+    top: 1.5rem;
+    cursor: pointer;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      top: 1.6rem;
+      left: 4rem;
+    }
+
   }
   &:nth-child(2){
-    //background-color: blue;
-    left: 10rem;
+    top: 6.7rem;
+    left: 3.2rem;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      top: 7rem;
+      left: 7.4rem;
+    }
   }
 
   &:nth-child(3){
-    //background-color: green;
-    left: 20rem;
+    top: 11.9rem;
+    left: 0rem;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      top: 7rem;
+      left: 0.4rem;
+    }
   }
 
   &:nth-child(4){
-    //background-color: yellow;
-    left: 30rem;
+    background-color: #2c2c2c;
+    top: 1rem;
+    left: 3.3rem;
+    transition: all 0.2s ease-in-out;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      top: 12.6rem;
+      left: 4rem;
+    }
   }
 
   &__img{
