@@ -1,0 +1,8 @@
+@import '../../variables/variables.scss' , '../../mixins/mixins.scss';
+
+.paddingContainer{
+  padding: 5%;
+  @include for-desktop-only{
+    padding: 10%;
+  }
+}

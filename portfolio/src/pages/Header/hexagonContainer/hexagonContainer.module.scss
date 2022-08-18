@@ -1,0 +1,39 @@
+@import '../../../scss/styles.scss';
+
+.hexagonContainer{
+  width: 100px;
+  height: 55px;
+  background: #2c2c2c;
+  position: absolute;
+  top: 10rem;
+  @include display-flexDirection(flex, column);
+  @include alignItems-justifyContent(center, center);
+  box-shadow: 1px 1px 20px -5px;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #2c2c2c;
+    
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #2c2c2c; 
+    
+  }
+}
