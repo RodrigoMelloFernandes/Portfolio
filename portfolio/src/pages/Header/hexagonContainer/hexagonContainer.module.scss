@@ -36,4 +36,28 @@
     border-top: 25px solid #2c2c2c; 
     
   }
+
+  &:first-child{
+    //background-color: red;
+    left: 1rem;
+  }
+  &:nth-child(2){
+    //background-color: blue;
+    left: 10rem;
+  }
+
+  &:nth-child(3){
+    //background-color: green;
+    left: 20rem;
+  }
+
+  &:nth-child(4){
+    //background-color: yellow;
+    left: 30rem;
+  }
+
+  &__img{
+    width: 20%;
+  }
+  
 }

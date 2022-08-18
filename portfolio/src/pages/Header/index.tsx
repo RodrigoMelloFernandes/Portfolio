@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Hamburguer from './hamburguer';
 import NavLinks from './NavLinks';
 import HexagonContainer from './hexagonContainer';
+import stackIcons from '../../data/stackIcons.json';
 
 export default function Header () {
 
@@ -16,8 +17,12 @@ export default function Header () {
       </div>
       {/* aqui vai ter duas divs com display flex e fled d row */}
       <div>
-        <HexagonContainer/>
-        {/* <Hexagon/> */}
+        {
+          stackIcons.map((icon, index) => (
+            <HexagonContainer key={index} url={icon.url}/>
+          ))
+        }
+
       </div>
       <div className={styles.header__paddingContainer}>
         <div className={styles.header__headerTitleBox}>
