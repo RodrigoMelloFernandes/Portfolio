@@ -1,5 +1,6 @@
 import Header from './pages/Header';
 import AboutMe from './pages/AboutMe';
+import Portfolios from './pages/Portfolios';
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <AboutMe />
+      <Portfolios/>
     </>
   );
 }

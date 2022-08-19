@@ -37,18 +37,6 @@
     &___content{
       @extend .content;
     }
-
-    &___button{
-      @extend .button;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      //--------------------Desktop----------------------------->
-      @include for-desktop-only {
-        margin-bottom: 2.5%;
-        margin-top: 1.5%;
-      }
-    }
-
   }
   
   &__img{
