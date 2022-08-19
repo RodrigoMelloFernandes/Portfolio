@@ -17,7 +17,8 @@
     cursor: pointer;
     filter: grayscale(100);
     &:hover{
-      filter: grayscale(0);
+      filter: none;
+      transform: scale(1.1);
     }
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
