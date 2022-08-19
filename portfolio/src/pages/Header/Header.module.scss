@@ -48,6 +48,7 @@
     @include for-desktop-only{
       @include display-flexDirection(flex, row-reverse);
       @include alignItems-justifyContent(center, center);
+      
     }
   }
 
