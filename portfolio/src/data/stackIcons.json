@@ -1,18 +1,27 @@
 [
   {
-    "url" : "../assets/stackIcons/Unofficial_JavaScript_logo_2.svg.png",
-    "title" : "teste"
+    "url" : "../assets/stackIcons/reactjs-logo-svg.svg"
   },
   {
-    "url" : "../assets/stackIcons/Git-Icon-1788C.png",
-    "title" : "teste"
+    "url" : "../assets/stackIcons/html5-svgr.svg"
   },
   {
-    "url" : "../assets/stackIcons/framer-motion.svg",
-    "title" : "teste"
+    "url" : "../assets/stackIcons/css3-svgr.svg"
   },
   {
-    "url" : "../assets/stackIcons/ESLint_logo.svg",
-    "title" : "teste"
+    "url" : "../assets/stackIcons/javascript-logo-svgr.svg"
+  },
+  {
+    "url" : "../assets/stackIcons/git-icon-logo-svg.svg"
+  },
+  {
+    "url" : "../assets/stackIcons/sass-logo-svg.svg"
+  },
+  {
+    "url" : "../assets/stackIcons/styled-component-logo-svg.svg"
+  },
+  {
+    "url" : "../assets/stackIcons/typescript-logo-svg.svg"
   }
 ]
+

@@ -4,7 +4,6 @@
   @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
   background: $Purple;
-  position: relative;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include display-flexDirection(flex, column);
@@ -22,11 +21,10 @@
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
-      @include alignItems-justifyContent(center, space-between);
+      @include alignItems-justifyContent(center, center);
       width: 100%;
       height: 5rem;
-      padding: 0;
-      position: relative;   
+      padding: 0;  
     }
   
     &__logo{
@@ -52,69 +50,94 @@
     width: 100%;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      @include display-flexDirection(flex, row);
-      @include alignItems-justifyContent(center, space-between);
+      @include display-flexDirection(flex, column-reverse);
+      @include alignItems-justifyContent(center, center);
     }
   }
 
-  &__hexagonBox{
-    position: relative;
-    width: 45%;
-    height: 28rem;
+  &__stacksBox{
+    width: 20%;
+    @include display-flexDirection(flex, column);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      position: relative;
-      height: 22rem;
-      width: 22%;
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, center);
+      width: 60%;
     }
+    
   }
-
   &__TitleBox{
     @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(flex-end, center);
-    width: 55%;
-
+    @include alignItems-justifyContent(center, flex-start);
+    width: 80%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      @include display-flexDirection(flex, column);
+      @include alignItems-justifyContent(center, flex-start);
+      width: 100%;
+    }
     &___title{
-      font-size: 1.5rem;
+      font-size: 2.7rem;
       color: $White;
       font-weight: 700;
       opacity: 0.9;
       text-align: end;
-      margin-bottom: 10%;
-      margin-top: 15%;
+      padding-bottom: 10%;
+      
+      //--------------------Desktop----------------------------->
+      @include for-desktop-only {
+        text-align: center;
+        font-size: 4rem;
+        padding-bottom: 3.5%;
+
+        
+      }
 
       &:nth-child(2){
-        font-size: .7rem;
-        margin-bottom: 10%;
+        font-size: .938rem;
+        padding-bottom: 10%;
         color: $Black;
-        text-align: end;
-        margin-top: 0%;
-      }
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only {
-      font-size: 5rem;
-      margin-bottom: 0%;
-      margin-top: 0%;
+        align-self: flex-end;
+        
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only {
+          text-align: center;
+          font-size: 2.5rem;
+          padding-bottom: 3.5%;
+          margin-top: 0%;
+          padding-top: 0%;
+          align-self: center;
+        }
       }
     }
 
     &___subtitle{
-      font-size: 1.5rem;
+      font-size: 1.9rem;
       color: $White;
       font-weight: 600;
       opacity: 0.9;
-      line-height: 1.5rem;
+      line-height: 2.2rem;
       text-align: end;
-      margin-bottom: 10%;
-      &:nth-of-type(2){
-        font-size: .7rem;
-        margin-bottom: 10%;
-        color: $Black;
-        text-align: end;
-      }
+      padding-bottom: 10%;
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
-        font-size: 2.5rem; 
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 3.5%;
+      }
+      
+      &:nth-of-type(2){
+        font-size: 1rem;
+        padding-bottom: 5%;
+        color: $Black;
+        align-self: flex-end;
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only {
+          text-align: center;
+          font-size: 2rem;
+          padding-bottom: 2.5%;
+          align-self: center;
+        }
       }
     }
   }

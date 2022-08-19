@@ -40,9 +40,9 @@
     @include display-flexDirection(flex, row);
     position: absolute;
     top: 1.5rem;
-    left: 26rem;
+    left: 21rem;
     border-top: none;
-    width: 40%;
+    width: 45%;
     height: 2rem;
     visibility: visible;
     
@@ -70,7 +70,7 @@
     }
     
     &____link{
-      font-size: 0.938rem;
+    font-size: 0.938rem;
     text-decoration: none;
     color: $White;
     font-weight: 500;
@@ -81,6 +81,7 @@
     }
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
+      font-size: 1.1rem;
       &:hover {
         cursor: pointer;
         color: $Purple;

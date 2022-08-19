@@ -1,8 +1,8 @@
 import styles from './Header.module.scss';
 import { useState } from 'react';
-import Hamburguer from './hamburguer';
+import Hamburguer from './Hamburguer';
 import NavLinks from './NavLinks';
-import Hexagon from './hexagon';
+import StackBoxComponent from './StackBoxComponent';
 import stackIcons from '../../data/stackIcons.json';
 
 export default function Header () {
@@ -16,11 +16,10 @@ export default function Header () {
         <NavLinks menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
       </div>
       <div className={styles.header__paddingBox}>
-        {/* aqui vai ter duas divs com display flex e fled d row */}
-        <div className={styles.header__hexagonBox}>
+        <div className={styles.header__stacksBox}>
           {
             stackIcons.map((icon, index) => (
-              <Hexagon key={index} url={icon.url}/>
+              <StackBoxComponent key={index} url={icon.url}/>
             ))
           }
 
