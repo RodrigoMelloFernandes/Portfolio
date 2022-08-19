@@ -7,7 +7,9 @@
   @include alignItems-justifyContent(center, center);
   //--------------------Desktop----------------------------->
   @include for-desktop-only{
-    width: 80%;
+    width: 22%;
+    flex-wrap: wrap;
+    height: 6.5rem;
   }
   &__img{
     width: 75%;
@@ -19,7 +21,7 @@
     }
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      width: 40%;
+      width: 50%;
     }
   }
 }

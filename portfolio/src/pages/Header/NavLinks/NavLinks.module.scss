@@ -38,6 +38,7 @@
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, center);
     position: absolute;
     top: 1.5rem;
     left: 21rem;
@@ -45,6 +46,7 @@
     width: 45%;
     height: 2rem;
     visibility: visible;
+    background-color: transparent;
     
   }
 }
@@ -53,7 +55,7 @@
   @include display-flexDirection(flex, column);
   
   //--------------------Desktop----------------------------->
-    @include for-desktop-only{
+  @include for-desktop-only{ 
     display: flex;
     flex-direction: row;
     align-items: center;
