@@ -38,16 +38,16 @@
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, center);
-    //position: fixed;
+    @include alignItems-justifyContent(center, flex-end);
+    position: fixed;
     top: 0rem;
     border-top: none;
-    width: 100%;
+    width: 65%;
     height: 2rem;
     visibility: visible;
     padding: 2.5rem 5%;
     overflow: hidden;
-    
+    background: transparent;
   }
 }
 

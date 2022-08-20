@@ -8,8 +8,6 @@
   //--------------------Desktop----------------------------->
   @include for-desktop-only{
     width: 22%;
-    flex-wrap: wrap;
-    height: 6.5rem;
   }
   &__img{
     width: 75%;

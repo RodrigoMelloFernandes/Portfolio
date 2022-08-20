@@ -8,19 +8,16 @@
   }
 
   &__fatherBox{
-  @include display-flexDirection(flex, column);
-  @include alignItems-justifyContent(flex-end, flex-end);
-  padding: 5%;
-  padding-top: 20%;
-  padding-bottom: 20%;
   position: relative;
+  height: 80vh;
+  padding: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
-    padding: 10%;
-    padding-top: 10%;
-    padding-bottom: 5%;
-    @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(center, center);
+    padding: 0;
+    height: 140vh;
+    
   }
 
   //Linha Vertical

@@ -3,8 +3,13 @@
 .header{
   @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
-  background: $Purple;
-
+  background-image: url(../../assets/backgroundImgs/MountFujii2.jpg);
+  background-repeat: no-repeat;
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only{
+    background-position: center;
+    height: 100vh;
+  }
   
   .menu{
     @include display-flexDirection(flex, row);
@@ -46,9 +51,10 @@
     width: 100%;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      @include display-flexDirection(flex, row-reverse);
+      @include display-flexDirection(flex, column-reverse);
       @include alignItems-justifyContent(center, center);
-      
+      padding-top: 10%;
+      padding-bottom: 5%;
     }
   }
 
@@ -59,8 +65,9 @@
     @include for-desktop-only{
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
-      width: 60%;
-      flex-wrap: wrap;
+      width: 70%;
+      padding-left: 5%;
+      padding-right: 5%;
     }
     
   }
@@ -80,30 +87,32 @@
       font-weight: 700;
       opacity: 0.9;
       text-align: end;
-      padding-bottom: 10%;
+      padding-bottom: 5%;
+      
       
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
         text-align: center;
-        font-size: 4rem;
-        padding-bottom: 10%;
-        padding-top: 0%;
-
+        font-size: 3rem;
+        padding-bottom: 2.5%;
+        padding-left: 10%;
+        
       }
 
       &:nth-child(2){
         font-size: .938rem;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         color: $Black;
         align-self: flex-end;
         
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
           text-align: center;
-          font-size: 1.8rem;
-          padding-bottom: 10%;
+          font-size: 1.1rem;
+          padding-bottom: 2.5%;
           margin-top: 0%;
           padding-top: 0%;
+          
           align-self: center;
         }
       }
@@ -116,12 +125,13 @@
       opacity: 0.9;
       line-height: 2.2rem;
       text-align: end;
-      padding-bottom: 10%;
+      padding-bottom: 5%;
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
         text-align: center;
-        font-size: 2.2rem;
-        padding-bottom: 10%;
+        font-size: 1.8rem;
+        padding-bottom: 0%;
+        padding-left: 10%;
       }
       
       &:nth-of-type(2){
@@ -132,7 +142,7 @@
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
           text-align: center;
-          font-size: 1.8rem;
+          font-size: 1.1rem;
           padding-bottom: 10%;
           align-self: center;
         }

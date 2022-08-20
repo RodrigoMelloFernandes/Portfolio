@@ -2,6 +2,7 @@ import Header from './pages/Header';
 import AboutMe from './pages/AboutMe';
 import Portfolios from './pages/Portfolios';
 import WorkExperience from './pages/WorkExperience';
+import Footer from './pages/Footer';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <AboutMe />
       <Portfolios/>
       <WorkExperience/>
+      <Footer/>
     </>
   );
 }
