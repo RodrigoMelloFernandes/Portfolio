@@ -16,7 +16,7 @@ export default function Header () {
         <NavLinks menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
       </div>
       <div className={styles.header__paddingBox}>
-        <div className={styles.header__stacksBox}>
+        <div className={styles.header__stacksIconsBox}>
           {
             stackIcons.map((icon, index) => (
               <StackBoxComponent key={index} url={icon.url}/>
@@ -25,16 +25,16 @@ export default function Header () {
 
         </div>
         <div className={styles.header__TitleBox}>
-          <h1 className={styles.header__TitleBox___title}>
+          <h1 className={styles.header__TitleBox___firstTitle}>
             Rodrigo Fernandes
           </h1>
-          <h1 className={styles.header__TitleBox___title}>
+          <h1 className={styles.header__TitleBox___firstTitle}>
             ロドリゴ・フェルナンデス
           </h1>
-          <h2 className={styles.header__TitleBox___subtitle}>
+          <h2 className={styles.header__TitleBox___secondTitle}>
             Desenvolvedor Front End
           </h2>
-          <h2 className={styles.header__TitleBox___subtitle}>
+          <h2 className={styles.header__TitleBox___secondTitle}>
             フロントエンドの開発者
           </h2>
         </div>

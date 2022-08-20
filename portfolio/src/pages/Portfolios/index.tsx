@@ -16,5 +16,3 @@ export default function Portfolios () {
   );
 }
 
-// 1 importar o arquivo js
-// 2 abrir um {} para escrever js
