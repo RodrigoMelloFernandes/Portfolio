@@ -1,0 +1,47 @@
+@import '../../scss/styles.scss';
+
+.workExperience {
+  padding: 5%;
+  &__firstTitleComponent{
+    @extend .titleh3;
+    padding-bottom: 5%;
+  }
+
+  &__fatherBox{
+  @include display-flexDirection(flex, column);
+  @include alignItems-justifyContent(flex-end, flex-end);
+  padding: 5%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  position: relative;
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only {
+    padding: 10%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+  }
+
+  //Linha Vertical
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+  }
+
+  &::after {
+    top: 4.5rem;
+    width: 0.125rem;
+    left: 0.4rem;
+    bottom: 5.1rem;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      top: 14.7rem;
+      width: 0.125rem;
+      left: 32rem;
+      bottom: 5.7rem;
+    }
+  }
+  }
+}

@@ -1,0 +1,91 @@
+@import '../../../scss/styles.scss';
+
+.workExperienceBoxComponent{
+  @include display-flexDirection(flex, column);
+  @include alignItems-justifyContent(flex-start, flex-start);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.8);
+  padding: 5%;
+  margin-bottom: $m5;
+  position: relative;
+  width: 93%;
+
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only {
+    width: 45%;
+    margin-right: 55%;
+  }
+
+  //Setinha
+  ::before {
+    content: '';
+    border-top: 10px solid transparent;
+    border-right: 10px solid $Purple;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 3rem;
+    right: 17.7rem;
+    z-index: 1;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      border-top: 10px solid transparent;
+      border-left: 10px solid $Purple;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid transparent;
+      right: -1.3rem;
+    }
+  }
+  
+  &:first-of-type {
+    
+  }
+
+  &:nth-of-type(2) {
+  }
+
+  &:nth-of-type(3) {
+  }
+
+  &:nth-of-type(4) {
+  }
+
+  &__timeline{
+    color: $Purple;
+    font-weight: 700;
+    margin-bottom: $m2;
+  }
+
+  &__company{
+    font-weight: 700;
+    margin-bottom: 2.5%;
+    //Bolinha
+    &::after {
+      content: '';
+      position: absolute;
+      background: white;
+      border: 2px solid black;
+      top: 3rem;
+      left: -2.45rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 16px;
+      z-index: 1;
+      //--------------------Desktop----------------------------->
+      @include for-desktop-only {
+        left: 25.15rem;
+      }
+    }
+  }
+
+  &__activity{
+    font-weight: 500;
+    margin-bottom: 5%;
+  }
+
+  &__activitySummary{
+    margin-bottom: 1%;
+    line-height: 1.3rem;
+  }
+}

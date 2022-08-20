@@ -1,17 +1,15 @@
 @import '../../scss/styles.scss';
 
 .portfolios{
+  @include display-flexDirection(flex, column);
+  @include alignItems-justifyContent(center, center);
+  width: 100%;
+  padding: 5%;
   background: linear-gradient($Black 17%, $White 15%); 
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     background: linear-gradient($Black 42%, $White 19%);
-  }
-
-  &__paddingBox{
-    @extend .paddingBox;
-    @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(center, center);
-    width: 100%;
+    padding: 5%
   }
 
   &__firstTitleComponent{

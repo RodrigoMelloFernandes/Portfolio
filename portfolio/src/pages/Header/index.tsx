@@ -15,7 +15,7 @@ export default function Header () {
         <Hamburguer menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
         <NavLinks menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
       </div>
-      <div className={styles.header__paddingBox}>
+      <div className={styles.header__fatherBox}>
         <div className={styles.header__stacksIconsBox}>
           {
             stackIcons.map((icon, index) => (

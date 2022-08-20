@@ -1,6 +1,7 @@
 import Header from './pages/Header';
 import AboutMe from './pages/AboutMe';
 import Portfolios from './pages/Portfolios';
+import WorkExperience from './pages/WorkExperience';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <AboutMe />
       <Portfolios/>
+      <WorkExperience/>
     </>
   );
 }

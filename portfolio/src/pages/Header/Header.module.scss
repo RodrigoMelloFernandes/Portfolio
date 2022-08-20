@@ -39,7 +39,7 @@
     }
   }
   
-  &__paddingBox {
+  &__fatherBox{
     @extend .paddingBox;
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(flex-start, space-between);

@@ -2,18 +2,19 @@
 
 .aboutMe{
   background-color: rgba(255, 255, 255, 0.1);
+  padding: 5%;
+  @include display-flexDirection(flex, column);
+  @include alignItems-justifyContent(center, center);
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only {
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(flex-start, center);
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 15%;
+  }
   &__paddingBox{
-    @extend .paddingBox;
-    @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(center, center);
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only {
-      @include display-flexDirection(flex, row);
-      @include alignItems-justifyContent(flex-start, center);
-      width: 100%;
-      padding-left: 10%;
-      padding-right: 10%;
-    }
+    
   }
 
   &__TitleBox{
@@ -23,7 +24,7 @@
     @include for-desktop-only {
       @include display-flexDirection(flex, column);
       @include alignItems-justifyContent(center, center);
-      width: 45%;
+      //width: 45%;
     }
 
     &___firstTitleComponent{
@@ -52,7 +53,7 @@
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      width: 38%;
+      width: 42%;
 
     }
   }

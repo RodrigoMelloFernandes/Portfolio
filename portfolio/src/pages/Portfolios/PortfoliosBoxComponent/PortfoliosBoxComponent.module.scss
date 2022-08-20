@@ -25,7 +25,6 @@
   &:nth-child(n + 3){
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      background-color: red;
       flex: 31%;
       max-width: 31%;
       margin-bottom: 0;
