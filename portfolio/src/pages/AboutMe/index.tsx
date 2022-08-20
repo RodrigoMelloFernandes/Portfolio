@@ -7,7 +7,7 @@ export default function AboutMe () {
     <section className={styles.aboutMe}>
       <div className={styles.aboutMe__paddingBox}>
         <div className={styles.aboutMe__TitleBox}>
-          <h3 className={styles.aboutMe__TitleBox___firstTitle}>
+          <h3 className={styles.aboutMe__TitleBox___firstTitleComponent}>
             Sobre Mim
           </h3>
           <h4 className={styles.aboutMe__TitleBox___secondTitle}>

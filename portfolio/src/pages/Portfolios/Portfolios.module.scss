@@ -1,0 +1,42 @@
+@import '../../scss/styles.scss';
+
+.portfolios{
+  background: linear-gradient($Black 17%, $White 15%); 
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only {
+    background: linear-gradient($Black 42%, $White 19%);
+  }
+
+  &__paddingBox{
+    @extend .paddingBox;
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+    width: 100%;
+  }
+
+  &__firstTitleComponent{
+    @extend .titleh3;
+    padding-bottom: 5%;
+    color: $White;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      font-size: 3.25rem;
+      padding-bottom: 5%;
+    }
+
+  }
+
+  &__portfoliosBox{
+    display: flex;
+    flex-direction: column;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+  }
+}
