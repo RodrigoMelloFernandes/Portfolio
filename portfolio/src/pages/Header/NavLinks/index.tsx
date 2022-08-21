@@ -1,5 +1,7 @@
 import { IMenuState } from '../../../types';
 import styles from './NavLinks.module.scss';
+import navListItemsLinks from '../../../data/navListItemsLinks.json';
+import ListItems from './ListItems';
 
 export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
   return (
@@ -11,41 +13,14 @@ export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
       }
     >
       <ul className={styles.NavListOpen__Ul}>
-        <li className={styles.NavListOpen__Ul___listItem}>
-          <a className={styles.NavListOpen__Ul___listItem____link}
-            href="#home"
-          >
-            Home
-          </a>
-        </li>
-        <li className={styles.NavListOpen__Ul___listItem}>
-          <a className={styles.NavListOpen__Ul___listItem____link}
-            href="#aboutme"
-          >
-            Sobre Mim
-          </a>
-        </li>
-        <li className={styles.NavListOpen__Ul___listItem}>
-          <a className={styles.NavListOpen__Ul___listItem____link}
-            href="#portfolios"
-          >
-            Portfólios
-          </a>
-        </li>
-        <li className={styles.NavListOpen__Ul___listItem}>
-          <a className={styles.NavListOpen__Ul___listItem____link}
-            href="#workingExperience"
-          >
-            Experiêncas
-          </a>
-        </li>
-        <li className={styles.NavListOpen__Ul___listItem}>
-          <a className={styles.NavListOpen__Ul___listItem____link}
-            href="#contact"
-          >
-            Contato
-          </a>
-        </li>
+        {
+          navListItemsLinks.map((item, index) => (
+            <ListItems 
+              ListItemLink={item.ListItemLink}
+              key={index}
+            /> 
+          ))
+        }
       </ul>
     </nav>
   );

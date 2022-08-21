@@ -4,10 +4,56 @@ import Hamburguer from './Hamburguer';
 import NavLinks from './NavLinks';
 import StackBoxComponent from './StackBoxComponent';
 import stackIcons from '../../data/stackIcons.json';
+import { motion } from 'framer-motion';
 
 export default function Header () {
-
   const [menuMobile, setMenuMobile] = useState(false);
+  const firstTitleVariant = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        type: 'tween',
+        bounce: 0.4,
+        duration: 1.5,
+        delay: 2.5,
+      },
+    },
+  };
+
+  const secondTitleVariant = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        type: 'tween',
+        bounce: 0.4,
+        duration: 1.5,
+        delay: 3,
+      },
+    },
+  };
+
+  const stackIconsVariant = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        type: 'tween',
+        bounce: 0.4,
+        duration: 2,
+        delay: 3,
+      },
+    },
+  };
+
+
   return (
     <header className={styles.header}>
       <div className={styles.menu}>
@@ -16,27 +62,52 @@ export default function Header () {
         <NavLinks menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
       </div>
       <div className={styles.header__fatherBox}>
-        <div className={styles.header__stacksIconsBox}>
+        <motion.div className={styles.header__stacksIconsBox}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={stackIconsVariant}
+        >
           {
             stackIcons.map((icon, index) => (
               <StackBoxComponent key={index} url={icon.url}/>
             ))
           }
 
-        </div>
+        </motion.div>
         <div className={styles.header__TitleBox}>
-          <h1 className={styles.header__TitleBox___firstTitle}>
+          <motion.h1 className={styles.header__TitleBox___firstTitle}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            variants={firstTitleVariant}
+          >
             Rodrigo Fernandes
-          </h1>
-          <h1 className={styles.header__TitleBox___firstTitle}>
+          </motion.h1>
+          <motion.h1 className={styles.header__TitleBox___firstTitle}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            variants={secondTitleVariant}
+          >
             ロドリゴ・フェルナンデス
-          </h1>
-          <h2 className={styles.header__TitleBox___secondTitle}>
+          </motion.h1>
+          <motion.h2 className={styles.header__TitleBox___secondTitle}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            variants={firstTitleVariant}
+          >
             Desenvolvedor Front End
-          </h2>
-          <h2 className={styles.header__TitleBox___secondTitle}>
+          </motion.h2>
+          <motion.h2 className={styles.header__TitleBox___secondTitle}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            variants={secondTitleVariant}
+          >
             フロントエンドの開発者
-          </h2>
+          </motion.h2>
         </div>
       </div>
     </header>
