@@ -3,13 +3,9 @@
 .header{
   @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
-  background-image: url(../../assets/backgroundImgs/MountFujii2.jpg);
+  background-image: url(../../assets/backgroundImgs/MountFuji.jpg);
   background-repeat: no-repeat;
-  //--------------------Desktop----------------------------->
-  @include for-desktop-only{
-    background-position: center;
-    height: 100vh;
-  }
+  background-position: center;
   
   .menu{
     @include display-flexDirection(flex, row);
@@ -54,7 +50,7 @@
       @include display-flexDirection(flex, column-reverse);
       @include alignItems-justifyContent(center, center);
       padding-top: 10%;
-      padding-bottom: 5%;
+      padding-bottom: 10%;
     }
   }
 
@@ -66,8 +62,7 @@
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
       width: 70%;
-      padding-left: 5%;
-      padding-right: 5%;
+
     }
     
   }
@@ -93,16 +88,15 @@
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.8rem;
         padding-bottom: 2.5%;
-        padding-left: 10%;
-        
+        padding-top: 10%;
       }
 
       &:nth-child(2){
         font-size: .938rem;
         padding-bottom: 5%;
-        color: $Black;
+        color: black;
         align-self: flex-end;
         
         //--------------------Desktop----------------------------->
@@ -112,7 +106,6 @@
           padding-bottom: 2.5%;
           margin-top: 0%;
           padding-top: 0%;
-          
           align-self: center;
         }
       }
@@ -131,13 +124,12 @@
         text-align: center;
         font-size: 1.8rem;
         padding-bottom: 0%;
-        padding-left: 10%;
       }
       
       &:nth-of-type(2){
         font-size: 1rem;
         padding-bottom: 5%;
-        color: $Black;
+        color: black;
         align-self: flex-end;
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
