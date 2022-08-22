@@ -10,7 +10,7 @@
     @include alignItems-justifyContent(center, space-between);
     @include width-height(100%, 0);
     background-color: $Black;
-    padding: $pl5;
+    padding: 6% 5%;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
@@ -44,6 +44,7 @@
     @include for-desktop-only{
       @include display-flexDirection(flex, column-reverse);
       @include alignItems-justifyContent(center, center);
+      padding: 10%;
     }
   }
 
@@ -55,7 +56,7 @@
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
       @include width-height(70%, 0);
-
+      padding-top: 5%;
     }
     
   }
@@ -81,8 +82,7 @@
       @include for-desktop-only {
         @include fontSize-fontWeight(2.8rem, 0);
         text-align: center;
-        padding-top: 2.5%;
-        padding-bottom: 1.5%;
+
       }
 
       &:nth-child(2){
@@ -109,7 +109,7 @@
       opacity: 0.9;
       line-height: 2.2rem;
       text-align: end;
-      padding-bottom: 5%;
+      padding-bottom: 2.5%;
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
         @include fontSize-fontWeight(1.8rem, 600);
@@ -127,7 +127,7 @@
         @include for-desktop-only {
           @include fontSize-fontWeight(1.1rem, 0);
           text-align: center;
-          padding-bottom: 2.5%;
+          padding-bottom: 1.5%;
           align-self: center;
         }
       }
