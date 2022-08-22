@@ -44,8 +44,6 @@
     @include for-desktop-only{
       @include display-flexDirection(flex, column-reverse);
       @include alignItems-justifyContent(center, center);
-      padding-top: 10%;
-      padding-bottom: 10%;
     }
   }
 
@@ -69,22 +67,22 @@
     @include for-desktop-only{
       @include display-flexDirection(flex, column);
       @include alignItems-justifyContent(center, flex-start);
-      @include width-height(60%, 0);
+      @include width-height(100%, 0);
     }
     &___firstTitle{
       @include fontSize-fontWeight(2.7rem, 700);
       color: $White;
-       opacity: 0.9;
+      opacity: 0.9;
       text-align: end;
-      padding-bottom: 5%;
+      padding-bottom: 2.5%;
       
       
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
         @include fontSize-fontWeight(2.8rem, 0);
         text-align: center;
-        padding-bottom: 2.5%;
-        padding-top: 10%;
+        padding-top: 2.5%;
+        padding-bottom: 1.5%;
       }
 
       &:nth-child(2){
@@ -116,7 +114,7 @@
       @include for-desktop-only {
         @include fontSize-fontWeight(1.8rem, 600);
         text-align: center;
-        padding-bottom: 0%;
+        padding-bottom: 1.5%;
       }
       
       &:nth-of-type(2){
@@ -129,7 +127,7 @@
         @include for-desktop-only {
           @include fontSize-fontWeight(1.1rem, 0);
           text-align: center;
-          padding-bottom: 10%;
+          padding-bottom: 2.5%;
           align-self: center;
         }
       }

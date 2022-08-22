@@ -22,6 +22,7 @@
   background-image: url(../../assets/backgroundImgs/MountFuji.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
 }
 
 @mixin fontSize-fontWeight($fSize, $fWeight) {
