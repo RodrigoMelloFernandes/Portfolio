@@ -6,54 +6,53 @@
   @include alignItems-justifyContent(center, center);
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(flex-start, space-around);
-    @include width-height(100%, 0);
-    padding-left: 15%;
-    padding-right: 15%;
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(flex-start, center);
+
   }
 
-  &__TitleBox{
+
+
+  &__TitleBoxAndImg{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      @include display-flexDirection(flex, column);
+      @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
-      @include width-height(60%, 0);
     }
 
-    &___firstTitleComponent{
-      @extend .titleh3;
-      padding-top: 5%;
-      padding-bottom: 5%;    
+    &___titleBox{
       //--------------------Desktop----------------------------->
-      @include for-desktop-only {
-        @include width-height(60%, 0);
-        padding-bottom: 2.5%;
+      @include for-desktop-only{
+        @include display-flexDirection(flex, column);
+        @include alignItems-justifyContent(center, center);
+        @include width-height(40%, 0);
+        margin-right: 5%;
       }
-
-    }
-
-    &___secondTitle{
-      @extend .titleh4;
-    }
-
-    &___content{
-      @extend .content;
-      //--------------------Desktop----------------------------->
-      @include for-desktop-only {
-        @include width-height(60%, 0);
+      &___firstTitleComponent{
+        @extend .titleh3;
+        padding-bottom: 5%;    
       }
-    }
-  }
   
-  &__img{
-    @include width-height(60%, 0);
-    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only {
-      @include width-height(41%, 0);
+      &___secondTitle{
+        @extend .titleh4;
+      }
+  
+      &___content{
+        @extend .content;
+
+      }
     }
-  }
+
+
+    &___img{  
+      @include width-height(100%, 0);
+      box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
+      //--------------------Desktop----------------------------->
+      @include for-desktop-only {
+      @include width-height(30%, 0);
+      }
+    }
+  } 
 }
