@@ -3,7 +3,7 @@
 .portfolios{
   @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
-  width: 100%;
+  @include width-height(100%, 0);
   padding: 5%;
   background: linear-gradient($Black 17%, $White 15%); 
   //--------------------Desktop----------------------------->
@@ -25,16 +25,13 @@
   }
 
   &__fatherBoxPortfoliosBoxComponent{
-    display: flex;
-    flex-direction: column;
+    @include display-flexDirection(flex, column);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      width: 100%;
+      @include display-flexDirection(flex, row);
+      @include width-height(100%, 0);
       position: relative;
-      display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
-
     }
   }
 }
