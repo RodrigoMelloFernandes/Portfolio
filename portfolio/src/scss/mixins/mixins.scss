@@ -7,3 +7,30 @@
   align-items: $align;
   justify-content: $justify;
 }
+
+@mixin width-height($width, $height) {
+  @if $width != 0 {
+      width: $width;
+  }
+
+  @if $height != 0 {
+      height: $height;
+  }
+}
+
+@mixin headerBackgroundImage {
+  background-image: url(../../assets/backgroundImgs/MountFuji.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin fontSize-fontWeight($fSize, $fWeight) {
+  @if $fSize != 0 {
+    font-size: $fSize;
+  }
+
+  @if $fWeight != 0 {
+    font-weight: $fWeight;
+  }
+}
+

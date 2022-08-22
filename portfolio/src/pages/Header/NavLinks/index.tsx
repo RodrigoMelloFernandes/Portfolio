@@ -9,9 +9,11 @@ export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
   const navListItemVariant = {
     initial : {
       y : -50,
+      opacity : 0
     },
     animate : {
       y : 0,
+      opacity : 1,
       transition: {
         duration : 1.2,
         delay: 3

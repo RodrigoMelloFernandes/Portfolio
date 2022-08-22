@@ -3,32 +3,27 @@
 .header{
   @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
-  background-image: url(../../assets/backgroundImgs/MountFuji.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  @include headerBackgroundImage;
   
   .menu{
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    width: 100%;
-    height: 4rem;
+    @include width-height(100%, 0);
     background-color: $Black;
     padding: $pl5;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
-      width: 100%;
-      height: 5rem;
+      @include width-height(100%, 0);
       padding: 0;
       background: transparent;
     }
   
     &__logo{
+      @include fontSize-fontWeight(1.5rem, 700);
       text-decoration: none;
       color: $White;
-      font-size: 1.5rem;
-      font-weight: 700;
       transition: all 0.35s linear;
       &:hover {
         color: $Purple;
@@ -44,7 +39,7 @@
     @extend .paddingBox;
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(flex-start, space-between);
-    width: 100%;
+    @include width-height(100%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
       @include display-flexDirection(flex, column-reverse);
@@ -55,13 +50,13 @@
   }
 
   &__stacksIconsBox{
-    width: 20%;
+    @include width-height(20%, 0);
     @include display-flexDirection(flex, column);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
-      width: 70%;
+      @include width-height(70%, 0);
 
     }
     
@@ -69,40 +64,39 @@
   &__TitleBox{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, flex-start);
-    width: 80%;
+    @include width-height(80%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
       @include display-flexDirection(flex, column);
       @include alignItems-justifyContent(center, flex-start);
-      width: 40%;
+      @include width-height(60%, 0);
     }
     &___firstTitle{
-      font-size: 2.7rem;
+      @include fontSize-fontWeight(2.7rem, 700);
       color: $White;
-      font-weight: 700;
-      opacity: 0.9;
+       opacity: 0.9;
       text-align: end;
       padding-bottom: 5%;
       
       
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
+        @include fontSize-fontWeight(2.8rem, 0);
         text-align: center;
-        font-size: 2.8rem;
         padding-bottom: 2.5%;
         padding-top: 10%;
       }
 
       &:nth-child(2){
-        font-size: .938rem;
+        @include fontSize-fontWeight(.938rem, 0);
         padding-bottom: 5%;
         color: $TitleBlack;
         align-self: flex-end;
         
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
+          @include fontSize-fontWeight(1.1rem, 0);
           text-align: center;
-          font-size: 1.1rem;
           padding-bottom: 2.5%;
           margin-top: 0%;
           padding-top: 0%;
@@ -112,29 +106,29 @@
     }
 
     &___secondTitle{
-      font-size: 1.9rem;
+      @include fontSize-fontWeight(1.9rem, 600);
       color: $White;
-      font-weight: 600;
       opacity: 0.9;
       line-height: 2.2rem;
       text-align: end;
       padding-bottom: 5%;
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
+        @include fontSize-fontWeight(1.8rem, 600);
         text-align: center;
-        font-size: 1.8rem;
         padding-bottom: 0%;
       }
       
       &:nth-of-type(2){
+        @include fontSize-fontWeight(1rem, 0);
         font-size: 1rem;
         padding-bottom: 5%;
         color: black;
         align-self: flex-end;
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
+          @include fontSize-fontWeight(1.1rem, 0);
           text-align: center;
-          font-size: 1.1rem;
           padding-bottom: 10%;
           align-self: center;
         }

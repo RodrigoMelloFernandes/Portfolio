@@ -10,9 +10,10 @@
   
   &__link{
   font-size: 0.938rem;
+  font-weight: 500;
+  
   text-decoration: none;
   color: $White;
-  font-weight: 500;
   transition: all 0.35s linear;
   &:hover {
     cursor: pointer;
