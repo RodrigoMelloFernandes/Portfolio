@@ -9,9 +9,7 @@
   }
   
   &__link{
-  font-size: 0.938rem;
-  font-weight: 500;
-  
+  @include fontSize-fontWeight(0.938rem, 500);
   text-decoration: none;
   color: $White;
   transition: all 0.35s linear;
@@ -21,7 +19,7 @@
   }
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
-    font-size: 1.1rem;
+    @include fontSize-fontWeight(1.1rem, 500);
     &:hover {
       cursor: pointer;
       color: $Purple;
