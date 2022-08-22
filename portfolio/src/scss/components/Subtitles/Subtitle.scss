@@ -6,8 +6,4 @@
   margin-bottom: $m5;
   line-height: 1.5rem;
   text-align: start;
-  //--------------------Desktop----------------------------->
-  @include for-desktop-only {
-    width: 75%;
-  }
 }

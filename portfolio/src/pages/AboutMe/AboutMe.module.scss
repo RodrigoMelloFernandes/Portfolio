@@ -7,9 +7,9 @@
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(flex-start, center);
+    @include alignItems-justifyContent(flex-start, space-around);
     @include width-height(100%, 0);
-    padding-left: 10%;
+    padding-left: 15%;
     padding-right: 15%;
   }
 
@@ -20,6 +20,7 @@
     @include for-desktop-only {
       @include display-flexDirection(flex, column);
       @include alignItems-justifyContent(center, center);
+      @include width-height(60%, 0);
     }
 
     &___firstTitleComponent{
@@ -40,6 +41,10 @@
 
     &___content{
       @extend .content;
+      //--------------------Desktop----------------------------->
+      @include for-desktop-only {
+        @include width-height(60%, 0);
+      }
     }
   }
   
@@ -48,7 +53,7 @@
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      @include width-height(42%, 0);
+      @include width-height(41%, 0);
     }
   }
 }
