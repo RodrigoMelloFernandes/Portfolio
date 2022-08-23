@@ -9,7 +9,7 @@
   }
   
   &___link{
-  font-size: 0.938rem;
+  @include fontSize-fontWeight(0.938rem, 500);
   text-decoration: none;
   color: $White;
   transition: all 0.35s linear;

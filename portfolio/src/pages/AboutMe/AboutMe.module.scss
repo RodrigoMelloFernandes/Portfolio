@@ -8,10 +8,8 @@
   @include for-desktop-only {
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(flex-start, center);
-
+    @include width-height(100%, 0);
   }
-
-
 
   &__TitleBoxAndImg{
     @include display-flexDirection(flex, column);
@@ -20,6 +18,7 @@
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
+       @include width-height(100%, 0);
     }
 
     &___titleBox{
@@ -28,7 +27,7 @@
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(center, center);
         @include width-height(40%, 0);
-        margin-right: 5%;
+        margin-right: 2.5%;
       }
       &___firstTitleComponent{
         @extend .titleh3;
@@ -51,7 +50,7 @@
       box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
-      @include width-height(30%, 0);
+      @include width-height(33%, 0);
       }
     }
   } 
