@@ -5,8 +5,8 @@
   @include alignItems-justifyContent(center, center);
   @include display-flexDirection(flex, column);
   position: relative;
-  @include width-height(9%, 0);
-  top: -17px;
+  @include width-height(9%, 2rem);
+  
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     display: none;

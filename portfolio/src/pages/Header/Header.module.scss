@@ -8,7 +8,7 @@
   .menu{
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    @include width-height(100%, 0);
+    @include width-height(100%, 13vh);
     background-color: $Black;
     padding: 6% 5%;
     //--------------------Desktop----------------------------->

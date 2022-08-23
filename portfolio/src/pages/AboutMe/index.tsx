@@ -1,5 +1,5 @@
 import styles from './AboutMe.module.scss';
-import fotoAtual from '../../assets/aboutMe/FotoAtual2.jpg';
+import fotoAtual from '../../assets/aboutMe/FotoAtual.jpg';
 import Button from '../../components/Button';
 
 export default function AboutMe () {
@@ -14,7 +14,7 @@ export default function AboutMe () {
             Centrado e organizado.
           </h4>
           <p className={styles.aboutMe__TitleBoxAndImg___titleBox___content}>
-            Atualmente estou cursando 3° semestre em Análise e Desenvolvimento de
+            Atualmente estou cursando 4° semestre em Análise e Desenvolvimento de
             Sistemas e buscando uma oportunidade na área de tecnologia, venho
             estudando a mais ou menos 2 anos com foco para me tornar um bom
             programador Front end.
