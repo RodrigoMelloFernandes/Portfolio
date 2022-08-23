@@ -1,5 +1,5 @@
 import styles from './AboutMe.module.scss';
-import fotoAtual from '../../assets/aboutMe/FotoAtual.jpg';
+import fotoAtual from '../../assets/aboutMe/FotoAtual2.jpg';
 import Button from '../../components/Button';
 
 export default function AboutMe () {

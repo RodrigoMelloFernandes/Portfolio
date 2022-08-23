@@ -2,7 +2,7 @@
 
 
 .NavListOpen{
-  @include width-height(100%, 50%);
+  @include width-height(100%, 47vh);
   top: 12%;
   z-index: 1;
   border-top: 1px solid $White;
@@ -32,7 +32,7 @@
 }
 
 .NavListClose{
-  @include width-height(100%, 1%);
+  @include width-height(100%, 0%);
   top: 12%;
   z-index: 1;
   border-top: 1px solid $White;
