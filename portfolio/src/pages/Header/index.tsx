@@ -18,7 +18,7 @@ export default function Header () {
         type: 'tween',
         bounce: 0.4,
         duration: 1.5,
-        delay: 1,
+        delay: 2.5,
       },
     },
   };
@@ -33,7 +33,7 @@ export default function Header () {
         type: 'tween',
         bounce: 0.4,
         duration: 1.5,
-        delay: 1.3,
+        delay: 3,
       },
     },
   };
@@ -48,7 +48,7 @@ export default function Header () {
         type: 'tween',
         bounce: 0.4,
         duration: 2,
-        delay: 2,
+        delay: 3,
       },
     },
   };

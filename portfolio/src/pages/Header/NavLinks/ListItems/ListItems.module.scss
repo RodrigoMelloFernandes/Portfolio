@@ -8,8 +8,8 @@
     margin: 0;
   }
   
-  &__link{
-  @include fontSize-fontWeight(0.938rem, 500);
+  &___link{
+  font-size: 0.938rem;
   text-decoration: none;
   color: $White;
   transition: all 0.35s linear;
