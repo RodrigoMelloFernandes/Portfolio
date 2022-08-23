@@ -2,25 +2,8 @@ import { IMenuState } from '../../../types';
 import styles from './NavLinks.module.scss';
 import navListItemsLinks from '../../../data/navListItemsLinks.json';
 import ListItems from './ListItems';
-import { motion } from 'framer-motion';
  
 export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
-
-  const navListItemVariant = {
-    initial : {
-      y : -50,
-      opacity : 0
-    },
-    animate : {
-      y : 0,
-      opacity : 1,
-      transition: {
-        duration : 1.2,
-        delay: 3
-      }
-    },
-  };
-
 
   return (
     <nav
@@ -30,11 +13,7 @@ export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
           : `${styles.NavListClose}`
       }
     >
-      <motion.ul className={styles.NavListOpen__Ul}
-        transition={{duration : 1.2, delay: 3}}
-        initial="initial"
-        animate="animate"
-        variants={navListItemVariant}
+      <ul className={styles.NavListOpen__Ul}
       >
         {
           navListItemsLinks.map((item, index) => (
@@ -44,7 +23,7 @@ export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
             /> 
           ))
         }
-      </motion.ul>
+      </ul>
     </nav>
   );
 }

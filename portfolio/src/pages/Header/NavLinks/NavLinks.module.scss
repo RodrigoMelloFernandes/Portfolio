@@ -71,33 +71,5 @@
       height: 2rem;
     }
   
-    &___listItem{
-      margin: 4.5%;
-      //--------------------Desktop----------------------------->
-      @include for-desktop-only {
-        margin: 0;
-      }
-      
-      &____link{
-      font-size: 0.938rem;
-      text-decoration: none;
-      color: $White;
-      font-weight: 500;
-      transition: all 0.35s linear;
-      &:hover {
-        cursor: pointer;
-        color: $Purple;
-      }
-      //--------------------Desktop----------------------------->
-      @include for-desktop-only {
-        font-size: 1.1rem;
-        &:hover {
-          cursor: pointer;
-          color: $Purple;
-        }
-      }
-      }
-    }
-  
   }
 }
