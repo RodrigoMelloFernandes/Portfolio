@@ -1,0 +1,169 @@
+@import '../../scss/styles.scss';
+
+.footer{
+  @include display-flexDirection(flex, column);
+  @include alignItems-justifyContent(center, center);
+  padding: 5%;
+  padding-top: 0;
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0;
+  }
+
+  &__title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: $m20;
+    text-align: start;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      margin-bottom: 5%;
+    }
+  }
+
+  &__contactBox {
+      @include display-flexDirection(flex, column);
+      @include alignItems-justifyContent(start, center);
+      width: 100%;
+
+    &___input {
+      width: 100%;
+      height: 3rem;
+      padding: 2.5%;
+      margin-bottom: 5%;
+      border: none;
+      border-bottom: 1px solid $Purple;
+      font-family: 'Inconsolata', monospace;
+      font-size: 1.1rem;
+      outline: none;
+      color: $Purple;
+    }
+
+    &___textArea {
+      width: 100%;
+      padding: 2.5%;
+      height: 5rem;
+      margin-bottom: 5%;
+      border: none;
+      border-bottom: 1px solid $Purple;
+      font-family: 'Inconsolata', monospace;
+      font-size: 1.1rem;
+      outline: none;
+      color: $Purple;
+    }
+
+    &___button {
+      width: 50%;
+      height: 3rem;
+      background-color: $Purple;
+      color: $White;
+      font-weight: 700;
+      margin-bottom: $m10;
+      transition: all 350ms linear;
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $Purple;
+        color: $Purple;
+        cursor: pointer;
+      }
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      width: 25%;
+      margin-bottom: 2.5%;
+    }
+    }
+  }
+
+  &__footerSocialMBox {
+    //@extend .footerSocialMBox;
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    width: 60%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      width: 28%;
+    }
+
+    &___footerSocialMBoxInBox {
+      //@extend .footerSocialMBoxInBox;
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, center);
+      width: 20%;
+      height: 3rem;
+      border: 1px solid $Purple;
+      font-weight: 700;
+      margin-bottom: $m10;
+      transition: all 350ms linear;
+      background-color: $Purple;
+      //--------------------Desktop----------------------------->
+      @include for-desktop-only {
+        width: 18%;
+      }
+  
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $Purple;
+        color: $Purple;
+        cursor: pointer;
+      }
+
+      &:hover &____icon {
+        background-color: transparent;
+        color: $Purple;
+        cursor: pointer;
+      }
+
+      &____icon {
+        //@extend .footerSocialMBoxInBoxIcon;
+        color: $White;
+        font-weight: 700;
+        margin-bottom: $m10;
+        transition: all 350ms linear;
+      }
+    }
+  }
+
+  &__line {
+    //@extend .footerLine;
+    width: 100%;
+    height: 0.1rem;
+    background-color: $Purple;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+
+  &__footerCopyRightBox {
+    //@extend .footerCopyRightBox;
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, center);
+    padding-top: 5%;
+    margin-bottom: 5%;
+    &__title {
+      //@extend .footerCopyRightBoxTitle;
+      font-size: 1.1rem;
+      font-weight: 300;
+
+      &___span {
+        //@extend .footerCopyRightBoxTitleSpan;
+        font-size: 1.1rem;
+        color: $Purple;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .footerSocialMBoxAndCopyRightBoxDesktopBox {
+    //@extend .footerSocialMBoxAndCopyRightBoxDesktopBox;
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, space-around);
+      width: 100%;
+    }
+  }
+
+}
