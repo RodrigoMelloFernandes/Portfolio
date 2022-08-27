@@ -3,7 +3,7 @@
 
 .NavListOpen{
   @include width-height(100%, 47vh);
-  top: 12%;
+  top: 13.7%;
   z-index: 1;
   border-top: 1px solid $White;
   overflow-y: auto;
@@ -33,7 +33,7 @@
 
 .NavListClose{
   @include width-height(100%, 0%);
-  top: 12%;
+  top: 13.7%;
   z-index: 1;
   border-top: 1px solid $White;
   overflow-y: auto;
