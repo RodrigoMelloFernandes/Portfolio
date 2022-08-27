@@ -1,15 +1,50 @@
 import styles from './AboutMe.module.scss';
 import fotoAtual from '../../assets/aboutMe/FotoAtual2.jpg';
 import Button from '../../components/Button';
-
+import { motion } from 'framer-motion';
 export default function AboutMe () {
+  const fadeInUpVariant = {
+    offscreen : {
+      y : 150,
+      opacity : 0
+    },
+    onscreen : {
+      y : 0,
+      opacity : 1,
+      transition : {
+        type : 'tween',
+        duration : 1,
+        delay: .2
+      }
+    }
+  };
+
+  const bounceVariant = {
+    offscreen: {
+      scale : 0
+    },
+    onscreen : {
+      scale : [ .5 , 1],
+      transition : {
+        type : 'tween',
+        duration : 1,
+        delay : .3
+      }
+    }
+  };
+
   return (
     <section className={styles.aboutMe}>
       <div className={styles.aboutMe__TitleBoxAndImg}>
         <div className={styles.aboutMe__TitleBoxAndImg___titleBox}>
-          <h3 className={styles.aboutMe__TitleBoxAndImg___titleBox___firstTitleComponent}>
+          <motion.h3 className={styles.aboutMe__TitleBoxAndImg___titleBox___firstTitleComponent}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8, margin : '400px'}}
+            variants={bounceVariant}
+          >
             Sobre Mim
-          </h3>
+          </motion.h3>
           <h4 className={styles.aboutMe__TitleBoxAndImg___titleBox___secondTitle}>
             Centrado e organizado.
           </h4>
@@ -25,7 +60,12 @@ export default function AboutMe () {
           </p>
           <Button></Button>
         </div>
-        <img src={fotoAtual} className={styles.aboutMe__TitleBoxAndImg___img}/>
+        <motion.img src={fotoAtual} className={styles.aboutMe__TitleBoxAndImg___img}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8, margin : '400px'}}
+          variants={fadeInUpVariant}
+        />
       </div>
     </section>
   );
