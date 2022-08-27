@@ -5,9 +5,4 @@
   font-weight: 500;
   line-height: 1.5rem;
   text-align: start;
-  //--------------------Desktop----------------------------->
-  @include for-desktop-only {
-    text-align: center;
-    margin-bottom: 2.5%;
-  }
 }

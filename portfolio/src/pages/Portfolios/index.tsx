@@ -1,5 +1,5 @@
 import styles from './Portfolios.module.scss';
-import portfoliosImgs from '../../../src/data/portfoliosImgs.json';
+import portfoliosImgs from 'data/portfoliosImgs.json';
 import PortfoliosBoxComponent from './PortfoliosBoxComponent';
 
 export default function Portfolios () {
