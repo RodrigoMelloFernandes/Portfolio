@@ -1,8 +1,6 @@
 import styles from './PortfoliosBoxComponent.module.scss';
-import { motion} from 'framer-motion';
-interface IPortfoliosImg {
-  url : string
-}
+import { motion } from 'framer-motion';
+import { IPortfoliosImg } from 'types';
 
 export default function portfoliosBoxComponent ({url}: IPortfoliosImg) {
   const fadeInUpVariant = {

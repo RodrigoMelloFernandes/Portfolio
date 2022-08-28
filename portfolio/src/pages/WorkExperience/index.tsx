@@ -1,8 +1,8 @@
 import styles from './WorkExperience.module.scss';
 import WorkExperienceAccordionComponent from './WorkExperienceAccordionComponent';
 import workExperienceAccordionInfos from '../../data/workExperienceAccordionInfos.json';
-import {motion} from 'framer-motion';
-import {bounceVariant} from 'animation/variants';
+import { motion } from 'framer-motion';
+import { bounceVariant } from 'animation/variants';
 
 export default function WorkExperience () {
 

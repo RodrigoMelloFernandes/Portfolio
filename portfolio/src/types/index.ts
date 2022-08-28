@@ -13,3 +13,15 @@ export interface IWorkExperienceAccordionComponent {
 export interface ISocialMediaComponent {
   url : string
 }
+
+export interface IListItems {
+  ListItemLink: string
+}
+
+export interface IStackBoxComponentImg {
+  url: string
+}
+
+export interface IPortfoliosImg {
+  url : string
+}

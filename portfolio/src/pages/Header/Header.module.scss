@@ -1,4 +1,4 @@
-@import '../../scss/styles.scss';
+@import 'src/scss/styles.scss';
 
 .header{
   @include display-flexDirection(flex, column);
@@ -8,9 +8,10 @@
   .menu{
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    @include width-height(100%, 0);
+    width: 100%;
+    max-height: 13vh;
     background-color: $Black;
-    padding: 6% 5%;
+    padding: 5% 5%;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include display-flexDirection(flex, row);

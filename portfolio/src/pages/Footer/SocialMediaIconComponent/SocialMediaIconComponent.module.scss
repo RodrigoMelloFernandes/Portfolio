@@ -3,14 +3,14 @@
 .footerSocialMBoxInBox{
   @include display-flexDirection(flex, row);
   @include alignItems-justifyContent(center, center);
-  @include width-height(100%, 3rem);
+  @include width-height(18%, 3rem);
   border: 1px solid $Purple;
   margin-bottom: $m10;
   transition: all 350ms linear;
   background-color: $Purple;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
-    @include width-height(22%, 0);
+    @include width-height(18%, 0);
     margin-bottom: 0;
   }
 

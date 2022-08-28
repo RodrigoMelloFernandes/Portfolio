@@ -1,6 +1,6 @@
 import styles from './Portfolios.module.scss';
-import portfoliosImgs from 'data/portfoliosImgs.json';
 import PortfoliosBoxComponent from './PortfoliosBoxComponent';
+import portfoliosImgs from 'data/portfoliosImgs.json';
 import { motion } from 'framer-motion';
 import { bounceVariant} from 'animation/variants';
 

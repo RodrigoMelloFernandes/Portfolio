@@ -1,10 +1,9 @@
 import styles from './Footer.module.scss';
-import {motion} from 'framer-motion';
-import { FaInstagram, FaWhatsapp, FaLinkedinIn, FaGithub,} from 'react-icons/fa';
-import { bounceVariant , fadeInUpVariant, fadeInLeftVariant} from 'animation/variants';
 import Form from './Form';
-import socialMediaIcons from '../../data/socialMediaIcons.json';
 import SocialMediaIconComponent from './SocialMediaIconComponent';
+import socialMediaIcons from '../../data/socialMediaIcons.json';
+import { motion } from 'framer-motion';
+import { bounceVariant , fadeInUpVariant, fadeInLeftVariant} from 'animation/variants';
 
 export default function Footer() {
 

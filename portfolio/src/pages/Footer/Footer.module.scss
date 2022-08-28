@@ -1,4 +1,4 @@
-@import '../../scss/styles.scss';
+@import 'src/scss/styles.scss';
 
 .footer{
   @include display-flexDirection(flex, column);
@@ -41,10 +41,10 @@
   &__footerSocialMBox{
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    @include width-height(60%, 0);
+    @include width-height(75%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      @include width-height(28%, 0);
+      @include width-height(22%, 0);
     }
   }
 

@@ -1,5 +1,5 @@
 import styles from './Hamburguer.module.scss';
-import { IMenuState } from '../../../types';
+import { IMenuState } from 'types';
 
 
 export default function Hamburguer({menuMobile, setMenuMobile}:IMenuState) {

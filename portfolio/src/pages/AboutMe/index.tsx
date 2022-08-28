@@ -1,8 +1,8 @@
 import styles from './AboutMe.module.scss';
+import Button from './Button';
 import fotoAtual from '../../assets/aboutMe/FotoAtual.jpg';
-import Button from '../../components/Button';
 import { motion } from 'framer-motion';
-import { bounceVariant , fadeInUpVariant} from 'animation/variants';
+import { bounceVariant , fadeInUpVariant } from 'animation/variants';
 
 export default function AboutMe () {
 

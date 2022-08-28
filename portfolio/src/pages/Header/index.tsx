@@ -1,10 +1,10 @@
 import styles from './Header.module.scss';
-import { useState } from 'react';
 import Hamburguer from './Hamburguer';
 import NavLinks from './NavLinks';
 import StackBoxComponent from './StackBoxComponent';
 import stackIcons from '../../data/stackIcons.json';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { firstTitleVariant, secondTitleVariant, stackIconsVariant } from 'animation/variants';
 
 export default function Header () {

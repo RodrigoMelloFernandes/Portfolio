@@ -1,6 +1,6 @@
-import { fadeInRightVariant } from 'animation/variants';
 import styles from './Form.module.scss';
 import { motion } from 'framer-motion';
+import { fadeInRightVariant } from 'animation/variants';
 
 export default function Form () {
   return (

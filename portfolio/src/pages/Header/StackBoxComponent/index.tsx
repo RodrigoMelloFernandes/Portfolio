@@ -1,8 +1,5 @@
 import styles from './StackBoxComponent.module.scss';
-
-interface IStackBoxComponentImg {
-  url: string
-}
+import { IStackBoxComponentImg } from 'types';
 
 export default function StackBoxComponent ({url}:IStackBoxComponentImg) {
   return (

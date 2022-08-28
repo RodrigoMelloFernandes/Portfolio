@@ -1,8 +1,6 @@
 import styles from './ListItems.module.scss';
+import { IListItems } from 'types';
 
-interface IListItems {
-  ListItemLink: string
-}
 
 export default function ListItems ({ListItemLink}:IListItems) {
   return (

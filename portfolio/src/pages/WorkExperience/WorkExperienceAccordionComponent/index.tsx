@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import styles from './WorkExperienceAccordionComponent.module.scss';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { IWorkExperienceAccordionComponent } from 'types/index';
-import {motion} from 'framer-motion';
 
 export default function WorkExperienceAccordionComponent({ timeLine, company, activity, activityResume }: IWorkExperienceAccordionComponent) {
 

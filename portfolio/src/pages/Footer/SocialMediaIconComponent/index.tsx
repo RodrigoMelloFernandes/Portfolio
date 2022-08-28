@@ -1,5 +1,5 @@
-import { ISocialMediaComponent } from 'types';
 import styles from './SocialMediaIconComponent.module.scss';
+import { ISocialMediaComponent } from 'types';
 
 export default function SocialMediaIconComponent ({url}:ISocialMediaComponent) {
   return (

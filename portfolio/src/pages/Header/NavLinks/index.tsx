@@ -1,7 +1,7 @@
-import { IMenuState } from '../../../types';
 import styles from './NavLinks.module.scss';
-import navListItemsLinks from '../../../data/navListItemsLinks.json';
 import ListItems from './ListItems';
+import navListItemsLinks from '../../../data/navListItemsLinks.json';
+import { IMenuState } from 'types';
  
 export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
 

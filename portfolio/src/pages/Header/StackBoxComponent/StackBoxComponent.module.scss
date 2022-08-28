@@ -1,4 +1,4 @@
-@import '../../../scss/styles.scss';
+@import 'src/scss/styles.scss';
 
 .stackBoxComponent{
   @include width-height(80%, 10vh);
@@ -10,7 +10,7 @@
   }
   &__img{
     @include width-height(75%, 0);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
     filter: grayscale(100);
     &:hover{

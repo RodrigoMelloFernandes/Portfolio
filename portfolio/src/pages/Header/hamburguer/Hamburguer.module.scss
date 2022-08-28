@@ -1,24 +1,28 @@
-@import '../../../scss/styles.scss';
+@import 'src/scss/styles.scss';
 
 .menuHamburguer {
   
   @include alignItems-justifyContent(center, center);
   @include display-flexDirection(flex, column);
   position: relative;
-  @include width-height(9%, 6vh);
+  @include width-height(13%, 7vh);
+  border: 1px solid $White;
+  border-radius: 10%;
+
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     display: none;
   }
 
   &__span {
-  @include width-height(100%, 3px);
+  @include width-height(60%, 3px);
   background: $White;
   border-radius: 30px;
   position: absolute;
 
   &:nth-child(1) {
     top: 8px;
+
   }
 
   &:nth-child(2) {
