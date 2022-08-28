@@ -1,7 +1,8 @@
 import styles from './Footer.module.scss';
 import {motion} from 'framer-motion';
 import { FaInstagram, FaWhatsapp, FaLinkedinIn, FaGithub,} from 'react-icons/fa';
-import { bounceVariant , fadeInUpVariant, fadeInRightVariant, fadeInLeftVariant} from 'animation/variants';
+import { bounceVariant , fadeInUpVariant, fadeInLeftVariant} from 'animation/variants';
+import Form from './Form';
 
 export default function Footer() {
 
@@ -13,31 +14,9 @@ export default function Footer() {
         viewport={{ once: true, amount: 0.8, margin : '400px'}}
         variants={bounceVariant}
       >Contato</motion.h2>
-      <motion.form className={styles.footer__contactBox}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8, margin : '400px'}}
-        variants={fadeInRightVariant}
-      >
-        <input
-          className={styles.footer__contactBox___input}
-          type="text"
-          placeholder="Seu Nome"
-        />
-        <input
-          className={styles.footer__contactBox___input}
-          type="email"
-          placeholder="Seu Email"
-        />
-        <textarea
-          className={styles.footer__contactBox___textArea}
-          placeholder="Mensagem"
-        ></textarea>
-        <button className={styles.footer__contactBox___button} type="submit">
-          Enviar Mensagem
-        </button>
-      </motion.form>
 
+      <Form/>
+      
       <motion.hr className={styles.footer__line} 
         initial="offscreen"
         whileInView="onscreen"

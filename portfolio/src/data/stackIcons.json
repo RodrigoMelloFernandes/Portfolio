@@ -1,27 +1,27 @@
 [
   {
-    "url" : "../assets/stackIcons/reactjs-logo-svg.svg"
+    "url" : "../assets/stackIcons/React-logo.svg"
   },
   {
-    "url" : "../assets/stackIcons/html5-svgr.svg"
+    "url" : "../assets/stackIcons/Html5-logo.svg"
   },
   {
-    "url" : "../assets/stackIcons/css3-svgr.svg"
+    "url" : "../assets/stackIcons/Css-logo.svg"
   },
   {
-    "url" : "../assets/stackIcons/javascript-logo-svgr.svg"
+    "url" : "../assets/stackIcons/Javascript-logo.svg"
   },
   {
-    "url" : "../assets/stackIcons/git-icon-logo-svg.svg"
+    "url" : "../assets/stackIcons/Git-logo.svg"
   },
   {
-    "url" : "../assets/stackIcons/sass-logo-svg.svg"
+    "url" : "../assets/stackIcons/Sass-logo.svg"
   },
   {
-    "url" : "../assets/stackIcons/styled-component-logo-svg.svg"
+    "url" : "../assets/stackIcons/StyledComponent-logo.svg"
   },
   {
-    "url" : "../assets/stackIcons/typescript-logo-svg.svg"
+    "url" : "../assets/stackIcons/Typescript-logo.svg"
   }
 ]
 
