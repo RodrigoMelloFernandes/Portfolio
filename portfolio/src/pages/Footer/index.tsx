@@ -3,6 +3,8 @@ import {motion} from 'framer-motion';
 import { FaInstagram, FaWhatsapp, FaLinkedinIn, FaGithub,} from 'react-icons/fa';
 import { bounceVariant , fadeInUpVariant, fadeInLeftVariant} from 'animation/variants';
 import Form from './Form';
+import socialMediaIcons from '../../data/socialMediaIcons.json';
+import SocialMediaIconComponent from './SocialMediaIconComponent';
 
 export default function Footer() {
 
@@ -30,43 +32,13 @@ export default function Footer() {
           viewport={{ once: true, amount: 0.8, margin : '400px'}}
           variants={fadeInUpVariant}
         >
-          <div
-            className={styles.footer__footerSocialMBox___footerSocialMBoxInBox}
-          >
-            <FaInstagram
-              className={
-                styles.footer__footerSocialMBox___footerSocialMBoxInBox____icon
-              }
-            />
-          </div>
-          <div
-            className={styles.footer__footerSocialMBox___footerSocialMBoxInBox}
-          >
-            <FaWhatsapp
-              className={
-                styles.footer__footerSocialMBox___footerSocialMBoxInBox____icon
-              }
-            />
-          </div>
-          <div
-            className={styles.footer__footerSocialMBox___footerSocialMBoxInBox}
-          >
-            <FaLinkedinIn
-              className={
-                styles.footer__footerSocialMBox___footerSocialMBoxInBox____icon
-              }
-            />
-          </div>
-          <div
-            className={styles.footer__footerSocialMBox___footerSocialMBoxInBox}
-          >
-            <FaGithub
-              className={
-                styles.footer__footerSocialMBox___footerSocialMBoxInBox____icon
-              }
-            />
-          </div>
+          {
+            socialMediaIcons.map((item, index) => (
+              <SocialMediaIconComponent url={item.url} key={index} />
+            ))
+          }
         </motion.div>
+
         <motion.div className={styles.footer__footerCopyRightBox}
           initial="offscreen"
           whileInView="onscreen"

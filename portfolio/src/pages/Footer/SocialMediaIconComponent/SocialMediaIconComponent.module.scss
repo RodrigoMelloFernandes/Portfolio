@@ -1,0 +1,38 @@
+@import '/src/scss/styles.scss';
+
+.footerSocialMBoxInBox{
+  @include display-flexDirection(flex, row);
+  @include alignItems-justifyContent(center, center);
+  width: 22%;
+  height: 3rem;
+  border: 1px solid $Purple;
+  margin-bottom: $m10;
+  transition: all 350ms linear;
+  background-color: $Purple;
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only {
+    width: 22%;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &:hover &__icon {
+    filter: opacity(0.4) drop-shadow(0 0 0 $Purple);
+  }
+
+  &__icon {
+    filter: invert(100%);
+    width: 43%;
+    margin-bottom: $m10;
+    transition: all 350ms linear;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      width: 32%;
+    }
+  }
+}
+

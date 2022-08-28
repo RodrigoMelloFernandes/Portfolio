@@ -43,7 +43,6 @@
   &__img{
     width: 100%;
     height: 22rem;
-
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
       height: 100%;

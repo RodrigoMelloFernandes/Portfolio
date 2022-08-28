@@ -9,3 +9,7 @@ export interface IWorkExperienceAccordionComponent {
   activity : string
   activityResume : string
 }
+
+export interface ISocialMediaComponent {
+  url : string
+}

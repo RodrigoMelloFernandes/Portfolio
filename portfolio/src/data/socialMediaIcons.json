@@ -1,14 +1,14 @@
 [
   {
-    "url" : "/src/assets/Footer/SocialMediaIcons/Instagram-logo.svg"
+    "url" : "../assets/Footer/SocialMediaIcons/Instagram-logo.svg"
   },
   {
-    "url" : "/src/assets/Footer/SocialMediaIcons/WhatsApp-logo.svg"
+    "url" : "../assets/Footer/SocialMediaIcons/WhatsApp-logo.svg"
   },
   {
-    "url" : "/src/assets/Footer/SocialMediaIcons/Linkedin-logo.svg"
+    "url" : "../assets/Footer/SocialMediaIcons/Linkedin-logo.svg"
   },
   {
-    "url" : "/src/assets/Footer/SocialMediaIcons/Github-logo.svg"
+    "url" : "../assets/Footer/SocialMediaIcons/Github-logo.svg"
   }
 ]
