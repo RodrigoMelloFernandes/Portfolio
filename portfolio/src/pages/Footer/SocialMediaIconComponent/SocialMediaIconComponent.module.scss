@@ -3,15 +3,14 @@
 .footerSocialMBoxInBox{
   @include display-flexDirection(flex, row);
   @include alignItems-justifyContent(center, center);
-  width: 22%;
-  height: 3rem;
+  @include width-height(100%, 3rem);
   border: 1px solid $Purple;
   margin-bottom: $m10;
   transition: all 350ms linear;
   background-color: $Purple;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
-    width: 22%;
+    @include width-height(22%, 0);
     margin-bottom: 0;
   }
 
@@ -26,12 +25,12 @@
 
   &__icon {
     filter: invert(100%);
-    width: 43%;
+    @include width-height(43%, 0);
     margin-bottom: $m10;
     transition: all 350ms linear;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      width: 32%;
+      @include width-height(32%, 0);
     }
   }
 }

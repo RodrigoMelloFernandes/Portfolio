@@ -13,8 +13,7 @@
   }
 
   &__title {
-    font-size: 3.125rem;
-    font-weight: 700;
+    @include fontSize-fontWeight(3.125rem, 700);
     margin-bottom: $m20;
     text-align: start;
     //--------------------Desktop----------------------------->
@@ -33,7 +32,7 @@
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, space-around);
-      width: 100%;
+      @include width-height(100%, 0);
       padding-top: 5%;
       padding-bottom: 5%;
     }
@@ -42,16 +41,16 @@
   &__footerSocialMBox{
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    width: 60%;
+    @include width-height(60%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      width: 28%;
+      @include width-height(28%, 0);
     }
   }
 
   &__footerCopyRightBox{
     &__title{
-      font-weight: 500;
+      @include fontSize-fontWeight(0, 600);
       &___span{
         color: $Purple;
       }

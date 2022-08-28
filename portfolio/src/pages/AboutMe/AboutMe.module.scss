@@ -39,8 +39,8 @@
         margin-bottom: 5%;
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
+          @include width-height(52%, 0);
           text-align: center;
-          width: 52%;
           font-size: 1rem;
           margin-bottom: 2.5%;
         }

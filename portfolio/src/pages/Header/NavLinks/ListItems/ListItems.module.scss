@@ -19,7 +19,7 @@
   }
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
-    font-size: 1.1rem;
+    @include fontSize-fontWeight(1.1rem, 0);
     &:hover {
       cursor: pointer;
       color: $Purple;

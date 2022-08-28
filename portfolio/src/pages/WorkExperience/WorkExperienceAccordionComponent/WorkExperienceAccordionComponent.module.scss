@@ -30,11 +30,10 @@
   }
 
   &__collapseOpen{
+    @include width-height(100%, 0);
     padding: 18px;
-    width: 100%;
     outline: none;
     transition: 0.4s;
-
 
     &___company{
       @extend .titleh4;
@@ -48,7 +47,7 @@
 
     &___activityResume{
       @extend .content;
-      font-weight: 300;
+      @include fontSize-fontWeight(0, 300);
     }
   }
 

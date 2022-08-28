@@ -2,17 +2,15 @@
 
 
 .titleh3{
-  font-size: 3.125rem;
-  font-weight: 700; 
+  @include fontSize-fontWeight(3.125rem, 700); 
   text-align: center;
   color: $TitleBlack;
 }
 
 .titleh4{
-  font-size: 1.1rem;
-  font-weight: 700;
+  @include fontSize-fontWeight(1.1rem, 700); 
+  @include width-height(100%, 0);
   line-height: 1.5rem;
   text-align: center;
-  width: 100%;
   color: $Purple;
 }

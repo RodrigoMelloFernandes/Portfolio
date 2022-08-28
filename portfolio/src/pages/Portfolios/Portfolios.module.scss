@@ -18,7 +18,7 @@
     color: $White;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      font-size: 3.25rem;
+      @include fontSize-fontWeight(3.25rem, 0);
       padding-bottom: 5%;
     }
 
