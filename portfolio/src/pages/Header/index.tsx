@@ -5,54 +5,10 @@ import NavLinks from './NavLinks';
 import StackBoxComponent from './StackBoxComponent';
 import stackIcons from '../../data/stackIcons.json';
 import { motion } from 'framer-motion';
+import { firstTitleVariant, secondTitleVariant, stackIconsVariant } from 'animation/variants';
 
 export default function Header () {
   const [menuMobile, setMenuMobile] = useState(false);
-  const firstTitleVariant = {
-    offscreen: {
-      opacity: 0,
-    },
-    onscreen: {
-      opacity: 1,
-      transition: {
-        type: 'tween',
-        bounce: 0.4,
-        duration: 1.5,
-        delay: 1,
-      },
-    },
-  };
-
-  const secondTitleVariant = {
-    offscreen: {
-      opacity: 0,
-    },
-    onscreen: {
-      opacity: 1,
-      transition: {
-        type: 'tween',
-        bounce: 0.4,
-        duration: 1.5,
-        delay: 1.5,
-      },
-    },
-  };
-
-  const stackIconsVariant = {
-    offscreen: {
-      opacity: 0,
-    },
-    onscreen: {
-      opacity: 1,
-      transition: {
-        type: 'tween',
-        bounce: 0.4,
-        duration: 2,
-        delay: 2,
-      },
-    },
-  };
-
 
   return (
     <header className={styles.header}>

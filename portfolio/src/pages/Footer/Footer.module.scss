@@ -4,7 +4,7 @@
   @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
   padding: 5%;
-  padding-top: 0;
+  padding-top: 5%;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     padding-left: 10%;

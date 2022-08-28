@@ -2,36 +2,9 @@ import styles from './AboutMe.module.scss';
 import fotoAtual from '../../assets/aboutMe/FotoAtual2.jpg';
 import Button from '../../components/Button';
 import { motion } from 'framer-motion';
-export default function AboutMe () {
-  const fadeInUpVariant = {
-    offscreen : {
-      y : 150,
-      opacity : 0
-    },
-    onscreen : {
-      y : 0,
-      opacity : 1,
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay: .2
-      }
-    }
-  };
+import { bounceVariant , fadeInUpVariant} from 'animation/variants';
 
-  const bounceVariant = {
-    offscreen: {
-      scale : 0
-    },
-    onscreen : {
-      scale : [ .5 , 1],
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay : .3
-      }
-    }
-  };
+export default function AboutMe () {
 
   return (
     <section className={styles.aboutMe}>

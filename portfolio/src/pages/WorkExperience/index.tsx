@@ -2,22 +2,10 @@ import styles from './WorkExperience.module.scss';
 import WorkExperienceAccordionComponent from './WorkExperienceAccordionComponent';
 import workExperienceAccordionInfos from '../../data/workExperienceAccordionInfos.json';
 import {motion} from 'framer-motion';
-
+import {bounceVariant} from 'animation/variants';
 
 export default function WorkExperience () {
-  const bounceVariant = {
-    offscreen: {
-      scale : 0
-    },
-    onscreen : {
-      scale : [ .5 , 1],
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay : .3
-      }
-    }
-  };
+
   return (
     <section className={styles.workExperience}>      
       <motion.h3 className={styles.workExperience__firstTitleComponent}

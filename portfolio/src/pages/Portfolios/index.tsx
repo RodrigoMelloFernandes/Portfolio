@@ -2,21 +2,9 @@ import styles from './Portfolios.module.scss';
 import portfoliosImgs from 'data/portfoliosImgs.json';
 import PortfoliosBoxComponent from './PortfoliosBoxComponent';
 import { motion } from 'framer-motion';
+import { bounceVariant} from 'animation/variants';
 
 export default function Portfolios () {
-  const bounceVariant = {
-    offscreen: {
-      scale : 0
-    },
-    onscreen : {
-      scale : [ .5 , 1],
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay : .3
-      }
-    }
-  };
 
   return (
     <section className={styles.portfolios}>

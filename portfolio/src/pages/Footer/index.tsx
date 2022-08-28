@@ -1,71 +1,9 @@
 import styles from './Footer.module.scss';
 import {motion} from 'framer-motion';
 import { FaInstagram, FaWhatsapp, FaLinkedinIn, FaGithub,} from 'react-icons/fa';
+import { bounceVariant , fadeInUpVariant, fadeInRightVariant, fadeInLeftVariant} from 'animation/variants';
 
 export default function Footer() {
-  const bounceVariant = {
-    offscreen: {
-      scale : 0
-    },
-    onscreen : {
-      scale : [ .5 , 1],
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay : .3
-      }
-    }
-  };
-
-  const fadeInUpVariant = {
-    offscreen : {
-      y : 150,
-      opacity : 0
-    },
-    onscreen : {
-      y : 0,
-      opacity : 1,
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay: .2
-      }
-    }
-  };
-
-  const fadeInRightVariant = {
-    offscreen : {
-      x : 150,
-      opacity : 0
-    },
-    onscreen : {
-      x : 0,
-      opacity : 1,
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay: .2
-      }
-    }
-  };
-
-  const fadeInLeftVariant = {
-    offscreen : {
-      x : -150,
-      opacity : 0
-    },
-    onscreen : {
-      x : 0,
-      opacity : 1,
-      transition : {
-        type : 'tween',
-        duration : 1,
-        delay: .2
-      }
-    }
-  };
-
-  
 
   return (
     <footer className={styles.footer}>
