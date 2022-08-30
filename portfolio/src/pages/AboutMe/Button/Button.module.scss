@@ -11,4 +11,13 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
+  &__link{
+    text-decoration: none;
+    color: $White;
+    &:hover{
+      color: $Purple;
+      transition: all 350ms linear;
+    }
+  }
 }
