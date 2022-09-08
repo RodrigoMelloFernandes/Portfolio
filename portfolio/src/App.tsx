@@ -4,16 +4,20 @@ import Portfolios from './pages/Portfolios';
 import WorkExperience from './pages/WorkExperience';
 import Footer from './pages/Footer';
 import { AnimateSharedLayout } from 'framer-motion';
+import { LanguageContextProvider } from 'context/LanguageContext';
+
 
 function App() {
   return (
     <>
       <AnimateSharedLayout>
-        <Header />
-        <AboutMe />
-        <Portfolios/>
-        <WorkExperience/>
-        <Footer/>
+        <LanguageContextProvider>
+          <Header />
+          <AboutMe />
+          <Portfolios/>
+          <WorkExperience/>
+          <Footer/>
+        </LanguageContextProvider>
       </AnimateSharedLayout>
     </>
   );

@@ -2,6 +2,7 @@ import styles from './NavLinks.module.scss';
 import ListItems from './ListItems';
 import navListItemsLinks from '../../../data/navListItemsLinks.json';
 import { IMenuState } from 'types';
+
  
 export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
 
@@ -17,10 +18,10 @@ export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
       >
         {
           navListItemsLinks.map((item, index) => (
-            <ListItems 
+            <ListItems
               ListItemLink={item.ListItemLink}
               key={index}
-            /> 
+            />
           ))
         }
       </ul>

@@ -5,11 +5,16 @@
   margin-top: 10%;
   margin-bottom: 10%;
   align-self: flex-start;
+  transition: all 350ms linear;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     align-self: center;
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+
+  &:hover &__link{
+    color: $Purple;
   }
 
   &__link{

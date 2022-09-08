@@ -4,16 +4,25 @@ import NavLinks from './NavLinks';
 import StackBoxComponent from './StackBoxComponent';
 import stackIcons from '../../data/stackIcons.json';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
 import { firstTitleVariant, secondTitleVariant, stackIconsVariant } from 'animation/variants';
 
 export default function Header () {
   const [menuMobile, setMenuMobile] = useState(false);
+  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const idiom = HandleLanguage(language);
+
 
   return (
+    
     <header className={styles.header}>
       <div className={styles.menu}>
         <a className={styles.menu__logo} href="#">ロドリゴ</a>
+        <button className={styles.menu__idiomButton}
+          onClick={() => setLanguage(!language)}>
+          {language ? 'English' : 'Português'}
+        </button>
         <Hamburguer menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
         <NavLinks menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
       </div>
@@ -29,7 +38,6 @@ export default function Header () {
               <StackBoxComponent key={index} url={icon.url}/>
             ))
           }
-
         </motion.div>
         <div className={styles.header__TitleBox}>
           <motion.h1 className={styles.header__TitleBox___firstTitle}
@@ -40,6 +48,7 @@ export default function Header () {
           >
             Rodrigo Fernandes
           </motion.h1>
+          {idiom.header.title}
           <motion.h1 className={styles.header__TitleBox___firstTitle}
             initial="offscreen"
             whileInView="onscreen"

@@ -1,7 +1,6 @@
 @import 'src/scss/styles.scss';
 
 .menuHamburguer {
-  
   @include alignItems-justifyContent(center, center);
   @include display-flexDirection(flex, column);
   position: relative;
