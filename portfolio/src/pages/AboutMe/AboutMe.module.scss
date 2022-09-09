@@ -27,7 +27,7 @@
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(center, center);
         @include width-height(33%, 0);
-        margin-right: 2.5%;
+        margin-right: 5%;
       }
       &___firstTitleComponent{
         @extend .titleh3;
