@@ -1,17 +1,18 @@
 import styles from './Portfolios.module.scss';
 import PortfoliosBoxComponent from './PortfoliosBoxComponent';
-import portfoliosImgs from 'data/portfoliosImgs.json';
 import { motion } from 'framer-motion';
 import { bounceVariant} from 'animation/variants';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 
 export default function Portfolios () {
   const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
 
+  console.log(idiom.portfoliosImgs);
+
   return (
-    <section className={styles.portfolios}>
+    <section className={styles.portfolios} id="Portfolios">
       <motion.h3 className={styles.portfolios__firstTitleComponent}
         initial="offscreen"
         whileInView="onscreen"
@@ -20,8 +21,13 @@ export default function Portfolios () {
       >{idiom.portfolios.firstTitleComponent}</motion.h3>
       <div className={styles.portfolios__fatherBoxPortfoliosBoxComponent}>
         {
-          portfoliosImgs.map((item, index) => (
-            <PortfoliosBoxComponent url={item.url} key={index}/>
+          idiom.portfolios.portfoliosImgs.map((item, index) => (
+            <PortfoliosBoxComponent 
+              img={item.img}
+              alt={item.alt}
+              content={item.content}
+              key={index}
+            />
           ))
         }
       </div>

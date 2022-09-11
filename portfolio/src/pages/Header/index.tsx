@@ -16,7 +16,7 @@ export default function Header () {
 
   return (
     
-    <header className={styles.header}>
+    <header className={styles.header} id="Home">
       <div className={styles.menu}>
         <a className={styles.menu__logo} href="#">ロドリゴ</a>
         <button className={styles.menu__idiomButton}

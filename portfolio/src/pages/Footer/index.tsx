@@ -8,7 +8,7 @@ import { bounceVariant , fadeInUpVariant, fadeInLeftVariant} from 'animation/var
 export default function Footer() {
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="Contact">
       <motion.h2 className={styles.footer__title}
         initial="offscreen"
         whileInView="onscreen"

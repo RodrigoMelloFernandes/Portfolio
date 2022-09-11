@@ -1,11 +1,12 @@
 import styles from './NavLinks.module.scss';
 import ListItems from './ListItems';
-import navListItemsLinks from '../../../data/navListItemsLinks.json';
 import { IMenuState } from 'types';
-
+import { useContext } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
  
 export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
-
+  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const idiom = HandleLanguage(language);
   return (
     <nav
       className={
@@ -17,10 +18,12 @@ export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
       <ul className={styles.NavListOpen__Ul}
       >
         {
-          navListItemsLinks.map((item, index) => (
+          idiom.nav.map((navItem, index) => (
             <ListItems
-              ListItemLink={item.ListItemLink}
-              key={index}
+              key={index} 
+              label={navItem.label}
+              href={navItem.href}
+              offset={navItem.offset}
             />
           ))
         }

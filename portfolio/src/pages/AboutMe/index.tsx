@@ -3,7 +3,7 @@ import Button from './Button';
 import fotoAtual from '../../assets/aboutMe/FotoAtual.jpg';
 import { motion } from 'framer-motion';
 import { bounceVariant , fadeInUpVariant } from 'animation/variants';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 
 
@@ -12,7 +12,7 @@ export default function AboutMe () {
   const idiom = HandleLanguage(language);
 
   return (
-    <section className={styles.aboutMe}>
+    <section className={styles.aboutMe} id="AboutMe">
       <div className={styles.aboutMe__TitleBoxAndImg}>
         <div className={styles.aboutMe__TitleBoxAndImg___titleBox}>
           <motion.h3 className={styles.aboutMe__TitleBoxAndImg___titleBox___firstTitleComponent}

@@ -19,7 +19,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    // noImplicityAny usado por conta do erro Parameter 'item' implicitly has an 'any' type.
+    "noImplicitAny" : false
   },
   "include": [
     "src/"
