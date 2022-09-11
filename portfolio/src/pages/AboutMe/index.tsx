@@ -6,6 +6,7 @@ import { bounceVariant , fadeInUpVariant } from 'animation/variants';
 import { useContext, useState } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 
+
 export default function AboutMe () {
   const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);

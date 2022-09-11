@@ -17,7 +17,7 @@ export default function Portfolios () {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8, margin : '400px'}}
         variants={bounceVariant}
-      >{idiom.portfolios}</motion.h3>
+      >{idiom.portfolios.firstTitleComponent}</motion.h3>
       <div className={styles.portfolios__fatherBoxPortfoliosBoxComponent}>
         {
           portfoliosImgs.map((item, index) => (
