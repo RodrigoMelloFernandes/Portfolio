@@ -21,6 +21,11 @@
     "personalContent" : "Gosto de ler livros, praticar esportes, gastronomia, aprender e fazer um bom trabalho."
   },
 
+  "portfolios" : {
+    "firstTitleComponent" : "Portfólios"
+  },
+
+
   "companyComponent": {
     "whoWeAre": "Quem é a Helou Sourcing?",
     "title": "Companhia",

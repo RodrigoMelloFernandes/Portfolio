@@ -21,6 +21,11 @@
     "personalContent" : "Like read books, play sports, gastronomic, learn and do a good job."
   },
 
+  "portfolios" : {
+    "firstTitleComponent" : "Portfolios"
+    
+  },
+
   "companyComponent": {
     "whoWeAre": "Who is Helou Sourcing?",
     "title": "Company",
