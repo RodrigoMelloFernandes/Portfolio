@@ -14,8 +14,11 @@
     "japaneseSecondTitle" : "フロントエンドの開発者"  
   },
 
-  "AboutMe" : {
-    
+  "aboutMe" : {
+    "firstTitleComponent" : "Sobre Mim",
+    "secondTitle" : "Centrado e organizado.",
+    "content" : "Atualmente estou cursando 4° semestre em Análise e Desenvolvimento de Sistemas e buscando uma oportunidade na área de tecnologia, venho estudando a mais ou menos 2 anos com foco em me tornar um bom programador Front end.",
+    "personalContent" : "Gosto de ler livros, praticar esportes, gastronomia, aprender e fazer um bom trabalho."
   },
 
   "companyComponent": {

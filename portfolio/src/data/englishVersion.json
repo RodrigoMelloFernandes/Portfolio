@@ -14,6 +14,13 @@
     "japaneseSecondTitle" : "フロントエンドの開発者"  
   },
 
+  "aboutMe" : {
+    "firstTitleComponent" : "About Me",
+    "secondTitle" : "Organize and centered.",
+    "content" : "I'm currently in fourth semester from System analysis and development and searching for a oportunity in technology area, i became study at two year mor or less with focus to become a good Front End programmer",
+    "personalContent" : "Like read books, play sports, gastronomic, learn and do a good job."
+  },
+
   "companyComponent": {
     "whoWeAre": "Who is Helou Sourcing?",
     "title": "Company",

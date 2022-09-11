@@ -3,8 +3,12 @@ import Button from './Button';
 import fotoAtual from '../../assets/aboutMe/FotoAtual.jpg';
 import { motion } from 'framer-motion';
 import { bounceVariant , fadeInUpVariant } from 'animation/variants';
+import { useContext, useState } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
 
 export default function AboutMe () {
+  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const idiom = HandleLanguage(language);
 
   return (
     <section className={styles.aboutMe}>
@@ -16,20 +20,16 @@ export default function AboutMe () {
             viewport={{ once: true, amount: 0.8, margin : '400px'}}
             variants={bounceVariant}
           >
-            Sobre Mim
+            {idiom.aboutMe.firstTitleComponent}
           </motion.h3>
           <h4 className={styles.aboutMe__TitleBoxAndImg___titleBox___secondTitle}>
-            Centrado e organizado.
+            {idiom.aboutMe.secondTitle}
           </h4>
           <p className={styles.aboutMe__TitleBoxAndImg___titleBox___content}>
-            Atualmente estou cursando 4° semestre em Análise e Desenvolvimento de
-            Sistemas e buscando uma oportunidade na área de tecnologia, venho
-            estudando a mais ou menos 2 anos com foco para me tornar um bom
-            programador Front end.
+            {idiom.aboutMe.content}
           </p>
           <p className={styles.aboutMe__TitleBoxAndImg___titleBox___content}>
-            Gosto de ler livros, praticar esportes, gastronomia, aprender e fazer
-            um bom trabalho.
+            {idiom.aboutMe.personalContent}
           </p>
           <Button></Button>
         </div>
