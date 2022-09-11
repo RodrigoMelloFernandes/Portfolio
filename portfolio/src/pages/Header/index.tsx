@@ -2,7 +2,6 @@ import styles from './Header.module.scss';
 import Hamburguer from './Hamburguer';
 import NavLinks from './NavLinks';
 import StackBoxComponent from './StackBoxComponent';
-import stackIcons from '../../data/stackIcons.json';
 import { motion } from 'framer-motion';
 import { useContext, useState } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
@@ -34,8 +33,12 @@ export default function Header () {
           variants={stackIconsVariant}
         >
           {
-            stackIcons.map((icon, index) => (
-              <StackBoxComponent key={index} url={icon.url}/>
+            idiom.header.stackIconsImgs.map((item, index) => (
+              <StackBoxComponent 
+                key={index} 
+                img={item.img}
+                alt={item.alt}
+              />
             ))
           }
         </motion.div>

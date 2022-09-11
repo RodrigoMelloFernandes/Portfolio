@@ -9,7 +9,8 @@ export interface IListItems {
 }
 
 export interface IStackBoxComponentImg {
-  url: string
+  img : string,
+  alt : string
 }
 export interface IPortfoliosImg {
   img : string

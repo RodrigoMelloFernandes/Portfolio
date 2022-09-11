@@ -23,10 +23,10 @@ export default function Portfolios () {
         {
           idiom.portfolios.portfoliosImgs.map((item, index) => (
             <PortfoliosBoxComponent 
+              key={index}
               img={item.img}
               alt={item.alt}
               content={item.content}
-              key={index}
             />
           ))
         }

@@ -1,16 +1,50 @@
 {
   "nav": [
     { "label": "Home", "href": "#Home", "offset": "100" },
-    { "label": "Sobre Mim", "href": "#AboutMe", "offset": "90" },
+    { "label": "About Me", "href": "#AboutMe", "offset": "90" },
     { "label": "Portfolios", "href": "#Portfolios", "offset": "90" },
-    { "label": "Contato", "href": "#Contact", "offset": "100" }
+    { "label": "Contact", "href": "#Contact", "offset": "100" }
   ],
 
   "header": {
     "firstTitle": "Rodrigo Fernandes",
     "japaneseFirstTitle" : "ロドリゴ・フェルナンデス",
     "secondTitle": "Desenvolvedor Front End",
-    "japaneseSecondTitle" : "フロントエンドの開発者"  
+    "japaneseSecondTitle" : "フロントエンドの開発者",
+    "stackIconsImgs" : [
+      {
+        "img" : "../assets/stackIcons/React-logo.svg",
+        "alt" : "React Logo"
+      },
+      {
+        "img" : "../assets/stackIcons/Html5-logo.svg",
+        "alt" : "Html Logo"
+      },
+      {
+        "img" : "../assets/stackIcons/Css-logo.svg",
+        "alt" : "CssLogo"
+      },
+      {
+        "img" : "../assets/stackIcons/Javascript-logo.svg"
+        ,"alt" : "Javascript Logo"
+      },
+      {
+        "img" : "../assets/stackIcons/Git-logo.svg",
+        "alt" : "Git Logo"
+      },
+      {
+        "img" : "../assets/stackIcons/Sass-logo.svg",
+        "alt" : "Sass Logo"
+      },
+      {
+        "img" : "../assets/stackIcons/StyledComponent-logo.svg",
+        "alt" : "Styled Component Logo"
+      },
+      {
+        "img" : "../assets/stackIcons/Typescript-logo.svg",
+        "alt" : "Typescript Logo"
+      }
+    ] 
   },
 
   "aboutMe" : {
