@@ -1,16 +1,17 @@
 {
   "nav": [
     { "label": "Home", "href": "#home", "offset": "100" },
-    { "label": "Company", "href": "#company", "offset": "90" },
-    { "label": "What We Do?", "href": "#whatWeDo", "offset": "90" },
-    { "label": "Why Helou Sourcing", "href": "#whyUs", "offset": "90" },
-    { "label": "Products", "href": "#products", "offset": "90" },
-    { "label": "Contact", "href": "#contact", "offset": "90" }
+    { "label": "Sobre Mim", "href": "#company", "offset": "90" },
+    { "label": "Portfolios", "href": "#whatWeDo", "offset": "90" },
+    { "label": "Experiências", "href": "#whyUs", "offset": "90" },
+    { "label": "Contato", "href": "#contact", "offset": "100" }
   ],
 
   "header": {
-    "title": "Metals Fe Alloys Catalysts",
-    "subTitle": "Quality, Reliability and Sustainability"
+    "firstTitle": "Rodrigo Fernandes",
+    "japaneseFirstTitle" : "ロドリゴ・フェルナンデス",
+    "secondTitle": "Desenvolvedor Front End",
+    "japaneseSecondTitle" : "フロントエンドの開発者"  
   },
 
   "companyComponent": {

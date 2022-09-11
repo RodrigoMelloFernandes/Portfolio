@@ -1,16 +1,21 @@
 {
   "nav": [
     { "label": "Home", "href": "#home", "offset": "100" },
-    { "label": "Companhia", "href": "#company", "offset": "90" },
-    { "label": "O Que Fazemos?", "href": "#whatWeDo", "offset": "90" },
-    { "label": "Porque a Helou Sourcing", "href": "#whyUs", "offset": "90" },
-    { "label": "Produtos", "href": "#products", "offset": "90" },
+    { "label": "Sobre Mim", "href": "#company", "offset": "90" },
+    { "label": "Portfolios", "href": "#whatWeDo", "offset": "90" },
+    { "label": "Experiências", "href": "#whyUs", "offset": "90" },
     { "label": "Contato", "href": "#contact", "offset": "100" }
   ],
 
   "header": {
-    "title": "Metais Ferros Catalisadores",
-    "subTitle": "Qualidade, Confiabilidade e Sustentabilidade"
+    "firstTitle": "Rodrigo Fernandes",
+    "japaneseFirstTitle" : "ロドリゴ・フェルナンデス",
+    "secondTitle": "Desenvolvedor Front End",
+    "japaneseSecondTitle" : "フロントエンドの開発者"  
+  },
+
+  "AboutMe" : {
+    
   },
 
   "companyComponent": {

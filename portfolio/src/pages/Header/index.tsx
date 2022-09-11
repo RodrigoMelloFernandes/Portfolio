@@ -46,16 +46,15 @@ export default function Header () {
             viewport={{ once: true, amount: 0.8 }}
             variants={firstTitleVariant}
           >
-            Rodrigo Fernandes
+            {idiom.header.firstTitle}
           </motion.h1>
-          {idiom.header.title}
           <motion.h1 className={styles.header__TitleBox___firstTitle}
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
             variants={secondTitleVariant}
           >
-            ロドリゴ・フェルナンデス
+            {idiom.header.japaneseFirstTitle}
           </motion.h1>
           <motion.h2 className={styles.header__TitleBox___secondTitle}
             initial="offscreen"
@@ -63,7 +62,7 @@ export default function Header () {
             viewport={{ once: true, amount: 0.8 }}
             variants={firstTitleVariant}
           >
-            Desenvolvedor Front End
+            {idiom.header.secondTitle}
           </motion.h2>
           <motion.h2 className={styles.header__TitleBox___secondTitle}
             initial="offscreen"
@@ -71,8 +70,9 @@ export default function Header () {
             viewport={{ once: true, amount: 0.8 }}
             variants={secondTitleVariant}
           >
-            フロントエンドの開発者
+            {idiom.header.japaneseSecondTitle}
           </motion.h2>
+          
         </div>
       </div>
     </header>
