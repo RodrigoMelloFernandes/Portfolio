@@ -12,7 +12,7 @@
     padding-bottom: 0;
   }
 
-  &__title {
+  &__firstTitleComponent {
     @include fontSize-fontWeight(3.125rem, 700);
     margin-bottom: $m20;
     text-align: start;

@@ -20,7 +20,8 @@ export interface IPortfoliosImg {
 }
 
 export interface ISocialMediaComponent {
-  url : string
+  img : string
+  alt : string
 }
 
 

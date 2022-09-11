@@ -2,10 +2,14 @@ import styles from './Form.module.scss';
 import { motion } from 'framer-motion';
 import { fadeInRightVariant } from 'animation/variants';
 import emailjs from 'emailjs-com';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
 
 export default function Form () {
   const [sendMessage, setSendMessage] = useState(false);
+
+  const{language, HandleLanguage} = useContext(LanguageContext);
+  const idiom = HandleLanguage(language);
   
   function sendEmail(e:any) {
     e.preventDefault();  
@@ -34,31 +38,31 @@ export default function Form () {
     >
       <input
         className={styles.contactBox__input}
-        type="text"
-        placeholder="Seu Nome"
-        name="name"
+        type={idiom.footer.form.inputName.type}
+        placeholder={idiom.footer.form.inputName.placeholder}
+        name={idiom.footer.form.inputName.name}
       />
       <input
         className={styles.contactBox__input}
-        type="email"
-        placeholder="Seu Email"
-        name="email"
+        type={idiom.footer.form.inputEmail.type}
+        placeholder={idiom.footer.form.inputEmail.placeholder}
+        name={idiom.footer.form.inputEmail.name}
       />
 
       <input
         className={styles.contactBox__input}
-        type="text"
-        placeholder="Informe seu assunto"
-        name="subject"
+        type={idiom.footer.form.inputSubject.type}
+        placeholder={idiom.footer.form.inputSubject.placeholder}
+        name={idiom.footer.form.inputSubject.name}
       />
       <textarea
         className={styles.contactBox__textArea}
-        placeholder="Mensagem"
-        name="message"
+        placeholder={idiom.footer.form.textArea.placeholder}
+        name={idiom.footer.form.textArea.name}
       ></textarea>
 
-      <button className={styles.contactBox__button} type="submit">
-      Enviar Mensagem
+      <button className={styles.contactBox__button} type={idiom.footer.form.button.type}>
+        {idiom.footer.form.button.content}
       </button>
     </motion.form>
   );

@@ -83,5 +83,52 @@
         "content" : "Em Breve"
       }
     ]
+  },
+
+  "footer" : {
+    "firstTitleComponent" : "Contato",
+    "form" : {
+      "inputName" : {
+        "type" : "text",
+        "placeholder" : "Seu Nome",
+        "name" : "name"
+      },
+      "inputEmail" : {
+        "type" : "email",
+        "placeholder" : "Seu Email",
+        "name" : "email"
+      },
+      "inputSubject" : {
+        "type" : "text",
+        "placeholder" : "Informe o assunto",
+        "name" : "subject"
+      },
+      "textArea" : {
+        "placeholder" : "Sua Mensagem",
+        "name" : "message"
+      },
+      "button" : {
+        "type" : "submit",
+        "content" : "Enviar Mensagem"
+      }
+    },
+    "socialMediaIcons" : [
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/Instagram-logo.svg",
+        "alt" : "Instagram Logo" 
+      },
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/WhatsApp-logo.svg",
+        "alt" : "WhatsApp Logo"
+      },
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/Linkedin-logo.svg",
+        "alt" : "Linkedin Logo"
+      },
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/Github-logo.svg",
+        "alt" : "Github Logo"
+      }
+    ]
   }
 }

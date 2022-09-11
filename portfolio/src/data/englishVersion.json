@@ -50,7 +50,7 @@
   "aboutMe" : {
     "firstTitleComponent" : "About Me",
     "secondTitle" : "Organize and centered.",
-    "content" : "I'm currently in fourth semester from System analysis and development and searching for a oportunity in technology area, i became study at two year mor or less with focus to become a good Front End programmer.",
+    "content" : "I'm currently in fourth semester from System Analysis and Development and searching for a oportunity in technology area, i became study at two year mor or less with focus to become a good Front End programmer.",
     "personalContent" : "Like read books, play sports, gastronomic, learn and do a good job."
   },
 
@@ -83,5 +83,54 @@
         "content" : "Soon"
       }
     ]
+  },
+
+  "footer" : {
+    "firstTitleComponent" : "Contact",
+    "form" : {
+      "inputName" : {
+        "type" : "text",
+        "placeholder" : "Your Name",
+        "name" : "name"
+      },
+      "inputEmail" : {
+        "type" : "email",
+        "placeholder" : "Your Email",
+        "name" : "email"
+      },
+      "inputSubject" : {
+        "type" : "text",
+        "placeholder" : "Inform your subject",
+        "name" : "subject"
+      },
+      "textArea" : {
+        "placeholder" : "Your Message",
+        "name" : "message"
+      },
+      "button" : {
+        "type" : "submit",
+        "content" : "Send Message"
+      }
+    },
+    "socialMediaIcons" : [
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/Instagram-logo.svg",
+        "alt" : "Instagram Logo"
+        
+      },
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/WhatsApp-logo.svg",
+        "alt" : "WhatsApp Logo"
+      },
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/Linkedin-logo.svg",
+        "alt" : "Linkedin Logo"
+      },
+      {
+        "img" : "../assets/Footer/SocialMediaIcons/Github-logo.svg",
+        "alt" : "Github Logo"
+      }
+    ]
+    
   }
 }

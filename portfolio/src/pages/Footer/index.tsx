@@ -1,20 +1,23 @@
 import styles from './Footer.module.scss';
 import Form from './Form';
 import SocialMediaIconComponent from './SocialMediaIconComponent';
-import socialMediaIcons from '../../data/socialMediaIcons.json';
 import { motion } from 'framer-motion';
 import { bounceVariant , fadeInUpVariant, fadeInLeftVariant} from 'animation/variants';
+import { useContext } from 'react';
+import { LanguageContext } from 'context/LanguageContext';
 
 export default function Footer() {
+  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const idiom = HandleLanguage(language);
 
   return (
     <footer className={styles.footer} id="Contact">
-      <motion.h2 className={styles.footer__title}
+      <motion.h2 className={styles.footer__firstTitleComponent}
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8, margin : '400px'}}
         variants={bounceVariant}
-      >Contato</motion.h2>
+      >{idiom.footer.firstTitleComponent}</motion.h2>
 
       <Form/>
       
@@ -32,8 +35,11 @@ export default function Footer() {
           variants={fadeInUpVariant}
         >
           {
-            socialMediaIcons.map((item, index) => (
-              <SocialMediaIconComponent url={item.url} key={index} />
+            idiom.footer.socialMediaIcons.map((item, index) => (
+              <SocialMediaIconComponent
+                img={item.img}
+                alt={item.alt}
+                key={index} />
             ))
           }
         </motion.div>
