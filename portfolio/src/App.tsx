@@ -1,3 +1,4 @@
+import Menu from 'pages/Menu';
 import Header from './pages/Header';
 import AboutMe from './pages/AboutMe';
 import Portfolios from './pages/Portfolios';
@@ -11,6 +12,7 @@ function App() {
     <>
       <AnimateSharedLayout>
         <LanguageContextProvider>
+          <Menu />
           <Header />
           <AboutMe />
           <Portfolios/>

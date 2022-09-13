@@ -1,0 +1,122 @@
+@import 'src/scss/styles.scss';
+
+.menu{
+  @include display-flexDirection(flex, row);
+  @include alignItems-justifyContent(center, space-between);
+  width: 100%;
+  background-color: $Black;
+  padding: 5% 5%;
+
+  //--------------------Desktop----------------------------->
+  @include for-desktop-only {
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    @include width-height(100%, 0);
+    padding: 0;
+    position: fixed;
+    background-color: transparent;
+  }
+
+  &__stickyMenu {
+    background-color: $Black;
+    border-bottom: none;
+    transition: all 1s linear;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      background-color: $Black;
+      border-bottom: none;
+      transition: all 1s linear;
+    }
+  }
+
+  &__idiomButton{
+    @extend .button;
+    width: 30%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      width: 15%;
+      margin-left: 2.5%;
+      margin-bottom: 1.5%;
+      margin-top: 1.5%;
+    }
+  }
+
+  &__logo{
+    @include fontSize-fontWeight(1.5rem, 700);
+    text-decoration: none;
+    color: $White;
+    transition: all 0.35s linear;
+    &:hover {
+      color: $Purple;
+    }
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      display: none;
+    }
+  }
+
+  .NavListOpen{
+    @include width-height(100%, 47vh);
+    top: 13%;
+    z-index: 1;
+    overflow-y: auto;
+    visibility: visible;
+    position: absolute;
+    background-color: $Black;
+    right: 0;
+    transition: all 0.75s ease-in-out;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      @include display-flexDirection(flex, row);
+      @include width-height(100%, 0);
+      position: absolute;
+      visibility: visible;
+    }
+  
+    &__Ul{
+      @include display-flexDirection(flex, column);
+      //--------------------Desktop----------------------------->
+      @include for-desktop-only{
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-around);
+        @include width-height(100%, 0);
+      }
+    }
+  }
+  
+  .NavListClose{
+    @include width-height(100%, 0%);
+    top: 13%;
+    z-index: 1;
+    overflow-y: auto;
+    visibility: hidden;
+    position: absolute;
+    background-color: $Black;
+    right: 0;
+    transition: all 0.35s ease-in-out;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      @include width-height(65%, 0);
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, flex-end);
+      position: fixed;
+      top: 0;
+      border-top: none;
+      visibility: visible;
+      padding: 2.5rem 5%;
+      overflow: hidden;
+      background: transparent;
+    }
+  
+    .NavListOpen__Ul{
+      @include display-flexDirection(flex, column);
+      
+      //--------------------Desktop----------------------------->
+      @include for-desktop-only{ 
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-around);
+        @include width-height(100%, 5vh);
+      } 
+    }
+  }
+}

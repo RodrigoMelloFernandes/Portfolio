@@ -1,6 +1,6 @@
 import styles from './Header.module.scss';
-import Hamburguer from './Hamburguer';
-import NavLinks from './NavLinks';
+// import Hamburguer from './Hamburguer';
+// import NavLinks from './NavLinks';
 import StackBoxComponent from './StackBoxComponent';
 import { motion } from 'framer-motion';
 import { useContext, useState } from 'react';
@@ -8,7 +8,7 @@ import { LanguageContext } from 'context/LanguageContext';
 import { firstTitleVariant, secondTitleVariant, stackIconsVariant } from 'animation/variants';
 
 export default function Header () {
-  const [menuMobile, setMenuMobile] = useState(false);
+  // const [menuMobile, setMenuMobile] = useState(false);
   const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
 
@@ -16,21 +16,15 @@ export default function Header () {
   return (
     
     <header className={styles.header} id="Home">
-
-      <div className={styles.menu}>
-
-        <a className={styles.menu__logo} href="#Home">ロドリゴ</a>
-
+      {/* <div className={styles.menu}>
+        <a className={styles.menu__logo} href="#">ロドリゴ</a>
         <button className={styles.menu__idiomButton}
           onClick={() => setLanguage(!language)}>
           {language ? 'English' : 'Português'}
         </button>
-
         <Hamburguer menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
-        
         <NavLinks menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
-      </div>
-
+      </div> */}
       <div className={styles.header__stacksIconsfatherBox}>
         <motion.div className={styles.header__stacksIconsBox}
           initial="offscreen"

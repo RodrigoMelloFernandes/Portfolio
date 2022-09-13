@@ -16,22 +16,22 @@
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, space-between);
-      // @include width-height(100%, 10vh);
-      // padding: 0;
+      @include width-height(100%, 10vh);
+      padding: 0;
     }
 
     &__idiomButton{
       @extend .button;
       width: 30%;
-      // margin-left: 14%;
-      // margin-right: 14%;
+      margin-left: 14%;
+      margin-right: 14%;
       //--------------------Desktop----------------------------->
       @include for-desktop-only{
         width: 15%;
-        // margin-left: 2.5%;
-        // margin-right: 0%;
-        // margin-top: 5%;
-        // position: fixed;
+        margin-left: 2.5%;
+        margin-right: 0%;
+        margin-top: 5%;
+        position: fixed;
       }
     }
   

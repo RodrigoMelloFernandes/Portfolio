@@ -54,7 +54,7 @@
   }
 
   &__boxComponentHover{
-    @include width-height(100%, 100%);
+    @include width-height(100%, 99%);
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, center);
     color: $White;
@@ -69,5 +69,9 @@
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: translateX(-50%);
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+      @include width-height(100%, 100%);
+    }
   }
 }
