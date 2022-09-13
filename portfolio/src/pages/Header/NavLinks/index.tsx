@@ -23,7 +23,6 @@ export default function NavLinks({menuMobile, setMenuMobile}:IMenuState) {
               key={index} 
               label={navItem.label}
               href={navItem.href}
-              offset={navItem.offset}
             />
           ))
         }

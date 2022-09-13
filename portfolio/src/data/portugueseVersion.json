@@ -1,9 +1,9 @@
 {
   "nav": [
-    { "label": "Home", "href": "#Home", "offset": "100" },
-    { "label": "Sobre Mim", "href": "#AboutMe", "offset": "90" },
-    { "label": "Portfólios", "href": "#Portfolios", "offset": "90" },
-    { "label": "Contato", "href": "#Contact", "offset": "100" }
+    { "label": "Home", "href": "#Home" },
+    { "label": "Sobre Mim", "href": "#AboutMe" },
+    { "label": "Portfólios", "href": "#Portfolios" },
+    { "label": "Contato", "href": "#Contact" }
   ],
 
   "header": {

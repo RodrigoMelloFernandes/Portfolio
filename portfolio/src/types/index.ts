@@ -5,7 +5,6 @@ export interface IMenuState {
 export interface IListItems {
   label : string,
   href : string,
-  offset : string
 }
 
 export interface IStackBoxComponentImg {

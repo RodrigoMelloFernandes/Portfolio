@@ -16,15 +16,21 @@ export default function Header () {
   return (
     
     <header className={styles.header} id="Home">
+
       <div className={styles.menu}>
-        <a className={styles.menu__logo} href="#">ロドリゴ</a>
+
+        <a className={styles.menu__logo} href="#Home">ロドリゴ</a>
+
         <button className={styles.menu__idiomButton}
           onClick={() => setLanguage(!language)}>
           {language ? 'English' : 'Português'}
         </button>
+
         <Hamburguer menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
+        
         <NavLinks menuMobile={menuMobile} setMenuMobile={setMenuMobile}/>
       </div>
+
       <div className={styles.header__stacksIconsfatherBox}>
         <motion.div className={styles.header__stacksIconsBox}
           initial="offscreen"

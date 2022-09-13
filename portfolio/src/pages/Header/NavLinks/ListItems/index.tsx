@@ -1,16 +1,18 @@
 import styles from './ListItems.module.scss';
 import { IListItems } from 'types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
-export default function ListItems ({label, href, offset}:IListItems) {
+export default function ListItems ({label, href}:IListItems) {
   return (
     <li className={styles.listItem}>
-      <a 
+      <AnchorLink 
         className={styles.listItem___link}
         href={href}  
       >
         {label} 
-      </a>
+      </AnchorLink>
     </li>
   );
 }
+
