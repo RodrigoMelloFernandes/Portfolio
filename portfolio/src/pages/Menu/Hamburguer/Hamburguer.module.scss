@@ -13,25 +13,26 @@
     display: none;
   }
 
-  &__span {
-  @include width-height(60%, 3px);
-  background: $White;
-  border-radius: 30px;
-  position: absolute;
+    &__span {
+    @include width-height(60%, 3px);
+    background: $White;
+    border-radius: 30px;
+    position: absolute;
 
-  &:nth-child(1) {
-    top: 8px;
+    &:nth-child(1) {
+      top: 8px;
+      
+    }
+
+    &:nth-child(2) {
+      top: 16px;
+
+    }
+
+    &:nth-child(3) {
+      top: 24px;
+
+    }
     
-  }
-
-  &:nth-child(2) {
-    top: 16px;
-
-  }
-
-  &:nth-child(3) {
-    top: 24px;
-
-  }
   }
 }

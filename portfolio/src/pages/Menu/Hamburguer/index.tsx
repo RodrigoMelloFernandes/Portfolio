@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 export default function Hamburguer({menuMobile, setMenuMobile}:IMenuState) {
 
-  const [ HamburguerEffect , setHamburguerEffect] = useState(false);
 
   return (
     <>
