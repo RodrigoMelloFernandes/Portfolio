@@ -8,29 +8,29 @@
   margin-bottom: $m10;
   transition: all 350ms linear;
   background-color: $Purple;
+  &:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: $Purple;
+  }
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include width-height(18%, 0);
     margin-bottom: 0;
   }
-
-  &:hover {
-    background-color: transparent;
-    cursor: pointer;
-  }
-
+  
   &:hover &__icon {
-    filter: opacity(0.4) drop-shadow(0 0 0 $Purple);
+    color: $Purple;
   }
 
   &__icon {
-    filter: invert(100%);
     @include width-height(43%, 0);
     margin-bottom: $m10;
+    color: $White;
     transition: all 350ms linear;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      @include width-height(32%, 0);
+      @include width-height(42%, 0);
     }
   }
 }

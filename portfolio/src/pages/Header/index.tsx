@@ -10,9 +10,7 @@ export default function Header () {
   const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
 
-
   return (
-    
     <header className={styles.header} id="Home">
       <div className={styles.header__stacksIconsfatherBox}>
         <motion.div className={styles.header__stacksIconsBox}

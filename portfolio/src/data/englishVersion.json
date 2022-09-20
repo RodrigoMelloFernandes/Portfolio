@@ -114,23 +114,22 @@
     },
     "socialMediaIcons" : [
       {
-        "img" : "../assets/Footer/SocialMediaIcons/Instagram-logo.svg",
-        "alt" : "Instagram Logo"
+        "iconType" : "Instagram",
+        "href" : "https://www.instagram.com/rodrigo.fernandes.p1/"
         
       },
       {
-        "img" : "../assets/Footer/SocialMediaIcons/WhatsApp-logo.svg",
-        "alt" : "WhatsApp Logo"
+        "iconType" : "Whatsapp",
+        "href" : "https://wa.me/5519983198335"
       },
       {
-        "img" : "../assets/Footer/SocialMediaIcons/Linkedin-logo.svg",
-        "alt" : "Linkedin Logo"
+        "iconType" : "Linkedin",
+        "href" : "https://www.linkedin.com/in/fernandesrodrigop11/"
       },
       {
-        "img" : "../assets/Footer/SocialMediaIcons/Github-logo.svg",
-        "alt" : "Github Logo"
+        "iconType" : "Github",
+        "href" : "https://github.com/RodrigoMelloFernandes"
       }
     ]
-    
   }
 }

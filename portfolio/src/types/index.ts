@@ -19,8 +19,9 @@ export interface IPortfoliosImg {
 }
 
 export interface ISocialMediaComponent {
+  iconType : string
   img : string
-  alt : string
+  href : string
 }
 
 

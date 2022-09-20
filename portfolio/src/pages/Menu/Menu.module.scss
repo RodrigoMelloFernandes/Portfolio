@@ -15,6 +15,7 @@
     padding: 0;
     position: fixed;
     background-color: transparent;
+    z-index: 9;
   }
 
   &__stickyMenu {
@@ -56,7 +57,7 @@
   }
 
   .NavListOpen{
-    @include width-height(100%, 47vh);
+    @include width-height(100%, 38vh);
     top: 13%;
     z-index: 1;
     overflow-y: auto;
