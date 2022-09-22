@@ -5,47 +5,47 @@
   @include alignItems-justifyContent(start, center);
   @include width-height(100%, 0);
 
-      &__input {
-        @include width-height(100%, 3rem);
-        @include fontSize-fontWeight(1.1rem, 300);
-        padding: 2.5%;
-        margin-bottom: 5%;
-        border: none;
-        border-bottom: 1px solid $Purple;
-        font-family: 'Inconsolata', monospace;
-        outline: none;
+    &__input {
+      @include width-height(100%, 3rem);
+      @include fontSize-fontWeight(1.1rem, 300);
+      padding: 2.5%;
+      margin-bottom: 5%;
+      border: none;
+      border-bottom: 1px solid $Purple;
+      font-family: 'Inconsolata', monospace;
+      outline: none;
+      color: $Purple;
+    }
+
+    &__textArea {
+      @include width-height(100%, 5rem);
+      @include fontSize-fontWeight(1.1rem, 300);
+      padding: 2.5%;
+      margin-bottom: 5%;
+      border: none;
+      border-bottom: 1px solid $Purple;
+      font-family: 'Inconsolata', monospace;
+      outline: none;
+      color: $Purple;
+    }
+
+    &__button {
+      @include width-height(100%, 3rem);
+      @include fontSize-fontWeight(0 , 700);
+      background-color: $Purple;
+      color: $White;
+      margin-bottom: $m10;
+      transition: all 350ms linear;
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $Purple;
         color: $Purple;
+        cursor: pointer;
       }
-  
-      &__textArea {
-        @include width-height(100%, 5rem);
-        @include fontSize-fontWeight(1.1rem, 300);
-        padding: 2.5%;
-        margin-bottom: 5%;
-        border: none;
-        border-bottom: 1px solid $Purple;
-        font-family: 'Inconsolata', monospace;
-        outline: none;
-        color: $Purple;
-      }
-  
-      &__button {
-        @include width-height(100%, 3rem);
-        @include fontSize-fontWeight(0 , 700);
-        background-color: $Purple;
-        color: $White;
-        margin-bottom: $m10;
-        transition: all 350ms linear;
-        &:hover {
-          background-color: transparent;
-          border: 1px solid $Purple;
-          color: $Purple;
-          cursor: pointer;
-        }
-      //--------------------Desktop----------------------------->
-      @include for-desktop-only {
-        @include width-height(25%, 0);
-        margin-bottom: 2.5%;
-      }
-      }
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+      @include width-height(25%, 0);
+      margin-bottom: 2.5%;
+    }
+  }
 }

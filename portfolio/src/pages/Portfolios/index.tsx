@@ -6,10 +6,8 @@ import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 
 export default function Portfolios () {
-  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
-
-  console.log(idiom.portfoliosImgs);
 
   return (
     <section className={styles.portfolios} id="Portfolios">

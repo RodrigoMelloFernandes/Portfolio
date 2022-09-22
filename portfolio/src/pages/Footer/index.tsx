@@ -38,7 +38,6 @@ export default function Footer() {
             idiom.footer.socialMediaIcons.map((item, index) => (
               <SocialMediaIconComponent
                 iconType={item.iconType}
-                img={item.img}
                 href={item.href}
                 key={index} />
             ))

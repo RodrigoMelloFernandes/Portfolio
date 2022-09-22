@@ -1,24 +1,25 @@
 @import 'src/scss/styles.scss';
 
 .menu{
+  @include width-height(100%, 0);
   @include display-flexDirection(flex, row);
   @include alignItems-justifyContent(center, space-between);
-  width: 100%;
   background-color: $Black;
   padding: 5% 5%;
-
+  
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
     @include width-height(100%, 0);
     padding: 0;
-    position: fixed;
     background-color: transparent;
-    z-index: 9;
+    position: fixed;
   }
 
   &__stickyMenu {
+    position: fixed;
+    z-index: 9;
     background-color: $Black;
     border-bottom: none;
     transition: all 1s linear;

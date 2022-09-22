@@ -1,5 +1,4 @@
 
-
 @mixin display-flexDirection($flex, $direction) {
   display: $flex;
   flex-direction: $direction;
@@ -24,8 +23,6 @@
   background-image: url(../../assets/backgroundImgs/MountFuji.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
-
 }
 
 @mixin fontSize-fontWeight($fSize, $fWeight) {

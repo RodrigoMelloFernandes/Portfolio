@@ -4,24 +4,26 @@ import Hamburguer from './Hamburguer';
 import ListItems from './ListItems';
 
 import { LanguageContext } from 'context/LanguageContext';
-
 import { useContext, useState } from 'react';
 
 export default function Menu () {
 
-  const [menuMobile, setMenuMobile] = useState(false);
   const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
-
+  
+  const [menuMobile, setMenuMobile] = useState(false);
   const [fixedMenu, setFixedMenu] = useState(false);
+  console.log(fixedMenu);
 
   function scrollPosition () {
-    if(scrollY > 50) {
+    if(window.scrollY > 50) {
       setFixedMenu(true);
     } else {
       setFixedMenu(false);
     }
   }
+
+  console.log(fixedMenu);
 
   window.addEventListener('scroll', scrollPosition);
 

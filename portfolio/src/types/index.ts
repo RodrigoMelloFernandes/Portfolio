@@ -20,7 +20,6 @@ export interface IPortfoliosImg {
 
 export interface ISocialMediaComponent {
   iconType : string
-  img : string
   href : string
 }
 
