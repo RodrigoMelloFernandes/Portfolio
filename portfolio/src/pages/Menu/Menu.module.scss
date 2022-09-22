@@ -58,7 +58,7 @@
   }
 
   .NavListOpen{
-    @include width-height(100%, 38vh);
+    @include width-height(100%, 210px);
     top: 100px;
     z-index: 1;
     overflow-y: auto;
