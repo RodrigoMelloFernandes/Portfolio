@@ -6,6 +6,8 @@
   @include alignItems-justifyContent(center, space-between);
   background-color: $Black;
   padding: 5% 5%;
+
+  top: -100px;
   
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
@@ -18,6 +20,9 @@
   }
 
   &__stickyMenu {
+
+    transform: translateY(100px);
+
     position: fixed;
     z-index: 9;
     background-color: $Black;

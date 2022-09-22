@@ -23,7 +23,6 @@ export default function Menu () {
     }
   }
 
-  console.log(fixedMenu);
 
   window.addEventListener('scroll', scrollPosition);
 
