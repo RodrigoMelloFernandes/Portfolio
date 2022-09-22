@@ -1,7 +1,7 @@
 @import 'src/scss/styles.scss';
 
 .menu{
-  @include width-height(100%, 0);
+  @include width-height(100%, 100px);
   @include display-flexDirection(flex, row);
   @include alignItems-justifyContent(center, space-between);
   background-color: $Black;
@@ -59,7 +59,7 @@
 
   .NavListOpen{
     @include width-height(100%, 38vh);
-    top: 13%;
+    top: 100px;
     z-index: 1;
     overflow-y: auto;
     visibility: visible;
@@ -88,7 +88,7 @@
   
   .NavListClose{
     @include width-height(100%, 0%);
-    top: 13%;
+    top: 100px;
     z-index: 1;
     overflow-y: auto;
     visibility: hidden;
