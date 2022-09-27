@@ -40,7 +40,7 @@
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
           @include width-height(52%, 0);
-          @include fontSize-fontWeight(1rem, 300);
+          @include fontSize-fontWeight(1rem, 700);
           margin-bottom: $m2;
           text-align: center;
         }
