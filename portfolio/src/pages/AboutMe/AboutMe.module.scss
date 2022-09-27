@@ -1,48 +1,48 @@
 @import 'src/scss/styles.scss';
 
 .aboutMe{
-  padding: 5%;
-  @include display-flexDirection(flex, column);
+  padding: $p5;
   @include alignItems-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
-    @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(flex-start, center);
+    @include display-flexDirection(flex, column);
     @include width-height(100%, 0);
   }
 
   &__TitleBoxAndImg{
-    @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
+    @include display-flexDirection(flex, column);
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
-       @include width-height(100%, 0);
+      @include display-flexDirection(flex, row);
+      @include width-height(100%, 0);
     }
 
     &___titleBox{
       //--------------------Desktop----------------------------->
       @include for-desktop-only{
-        @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(center, center);
+        @include display-flexDirection(flex, column);
         @include width-height(33%, 0);
-        margin-right: 5%;
+        margin-right: $m5;
       }
       &___firstTitleComponent{
         @extend .titleh3;
-        padding-bottom: 5%;    
+        padding-bottom: $p5;    
       }
   
       &___secondTitle{
         @extend .titleh4;
-        margin-bottom: 5%;
+        margin-bottom: $m5;
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
           @include width-height(52%, 0);
+          @include fontSize-fontWeight(1rem, 300);
+          margin-bottom: $m2;
           text-align: center;
-          font-size: 1rem;
-          margin-bottom: 2.5%;
         }
       }
   
@@ -50,8 +50,8 @@
         @extend .content;
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
+          margin-bottom: $m2;
           text-align: center;
-          margin-bottom: 2.5%;
         }
       }
     }

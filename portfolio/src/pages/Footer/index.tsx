@@ -7,7 +7,7 @@ import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 
 export default function Footer() {
-  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
 
   return (
@@ -51,7 +51,8 @@ export default function Footer() {
           variants={fadeInUpVariant}
         >
           <p className={styles.footer__footerCopyRightBox__title}>
-            © Desenvolvido por<span className={styles.footer__footerCopyRightBox__title___span}>              Rodrigo Fernandes
+            {idiom.footer.copyRight}<span className={styles.footer__footerCopyRightBox__title___span}>
+              {idiom.footer.developer}              
             </span>
           </p>
         </motion.div>

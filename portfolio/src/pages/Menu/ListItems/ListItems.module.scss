@@ -9,20 +9,20 @@
   
   &___link{
   @include fontSize-fontWeight(0.938rem, 550);
-  text-decoration: none;
   color: $White;
-  transition: all 0.35s linear;
+  text-decoration: none;
+  transition: $easeAll35s;
   &:hover {
-    cursor: pointer;
     color: $Purple;
+    cursor: pointer;
   }
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include fontSize-fontWeight(1.1rem, 0);
-    &:hover {
-      cursor: pointer;
-      color: $Purple;
-    }
+      &:hover {
+        color: $Purple;
+        cursor: pointer;
+      }
     }
   }
 }

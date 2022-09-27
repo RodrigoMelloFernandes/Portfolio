@@ -1,8 +1,0 @@
-@import '../../variables/variables.scss' , '../../mixins/mixins.scss';
-
-.paddingBox{
-  padding: 5%;
-  @include for-desktop-only{
-    padding: 5%;
-  }
-}

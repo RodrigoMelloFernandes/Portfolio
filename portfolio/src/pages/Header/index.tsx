@@ -2,12 +2,12 @@ import styles from './Header.module.scss';
 
 import StackBoxComponent from './StackBoxComponent';
 import { motion } from 'framer-motion';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 import { firstTitleVariant, secondTitleVariant, stackIconsVariant } from 'animation/variants';
 
 export default function Header () {
-  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
 
   return (
@@ -62,7 +62,6 @@ export default function Header () {
           >
             {idiom.header.japaneseSecondTitle}
           </motion.h2>
-          
         </div>
       </div>
     </header>

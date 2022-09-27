@@ -6,6 +6,8 @@
     { "label": "Contato", "href": "#Contact" }
   ],
 
+  "logo" : "ロドリゴ",
+
   "header": {
     "firstTitle": "Rodrigo Fernandes",
     "japaneseFirstTitle" : "ロドリゴ・フェルナンデス",
@@ -130,6 +132,8 @@
         "iconType" : "Github",
         "href" : "https://github.com/RodrigoMelloFernandes"
       }
-    ]
+    ],
+    "copyRight" : "© Desenvolvido por",
+    "developer" : " Rodrigo Fernandes"
   }
 }

@@ -26,7 +26,12 @@ export default function SocialMediaIconComponent ({iconType , href}:ISocialMedia
 
   return (
     <div className={styles.footerSocialMBoxInBox}>
-      <a target="_blank" rel="noreferrer" className={styles.footerSocialMBoxInBox__icon} href={href}>{handleIcon(iconType)}</a>
+      <a 
+        className={styles.footerSocialMBoxInBox__icon} href={href}
+        target="_blank" 
+        rel="noreferrer">
+        {handleIcon(iconType)}
+      </a>
     </div>
   );
 }

@@ -1,8 +1,6 @@
 import styles from './Menu.module.scss';
-
 import Hamburguer from './Hamburguer';
 import ListItems from './ListItems';
-
 import { LanguageContext } from 'context/LanguageContext';
 import { useContext, useState } from 'react';
 
@@ -32,7 +30,7 @@ export default function Menu () {
         : `${styles.menu}`
     }>
 
-      <a className={styles.menu__logo} href="#Home">ロドリゴ</a>
+      <a className={styles.menu__logo} href="#Home">{idiom.logo}</a>
 
       <button className={styles.menu__idiomButton}
         onClick={() => setLanguage(!language)}>

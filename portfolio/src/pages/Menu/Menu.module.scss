@@ -5,43 +5,42 @@
   @include display-flexDirection(flex, row);
   @include alignItems-justifyContent(center, space-between);
   background-color: $Black;
-  padding: 5% 5%;
+  padding: $p5;
   top: -100px;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     @include width-height(100%, 80px);
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    padding: 0;
     background-color: transparent;
+    padding: 0;
     position: fixed;
   }
   
 
   &__stickyMenu {
-    transform: translateY(100px);
-    position: fixed;
-    z-index: 9;
     background-color: $Black;
-    transition: all 1s linear;
-
+    position: fixed;
+    transform: translateY(100px);
+    transition: $easeAll3s;
+    z-index: 9;
   }
 
   &__idiomButton{
     @extend .button;
-    width: 30%;
+    @include width-height(30%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      width: 15%;
-      margin-left: 2.5%;
+      @include width-height(15%, 0);
+      margin-left: $m2;
     }
   }
 
   &__logo{
     @include fontSize-fontWeight(1.5rem, 700);
-    text-decoration: none;
     color: $White;
-    transition: all 0.35s linear;
+    text-decoration: none;
+    transition: $easeAll35s;
     &:hover {
       color: $Purple;
     }
@@ -53,14 +52,14 @@
 
   .NavListOpen{
     @include width-height(100%, 210px);
-    top: 100px;
-    z-index: 1;
-    overflow-y: auto;
-    visibility: visible;
-    position: absolute;
     background-color: $Black;
+    overflow-y: auto;
+    position: absolute;
     right: 0;
-    transition: all 0.75s ease-in-out;
+    transition: $easeAll35s;
+    top: 100px;
+    visibility: visible;
+    z-index: 1;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
@@ -73,8 +72,8 @@
       @include display-flexDirection(flex, column);
       //--------------------Desktop----------------------------->
       @include for-desktop-only{
-        @include display-flexDirection(flex, row);
         @include alignItems-justifyContent(center, space-around);
+        @include display-flexDirection(flex, row);
         @include width-height(100%, 0);
       }
     }
@@ -82,33 +81,33 @@
   
   .NavListClose{
     @include width-height(100%, 0%);
-    top: 100px;
-    z-index: 1;
-    overflow-y: auto;
-    visibility: hidden;
-    position: absolute;
     background-color: $Black;
+    overflow-y: auto;
+    position: absolute;
     right: 0;
-    transition: all 0.35s ease-in-out;
+    top: 100px;
+    visibility: hidden;
+    transition: $easeAll35s;
+    z-index: 1;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include width-height(65%, 0);
       @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, flex-end);
+      background: transparent;
+      overflow: hidden;
+      padding: 2.5rem 5%;
       position: fixed;
       top: 0;
       visibility: visible;
-      padding: 2.5rem 5%;
-      overflow: hidden;
-      background: transparent;
     }
   
     .NavListOpen__Ul{
       @include display-flexDirection(flex, column);
       //--------------------Desktop----------------------------->
       @include for-desktop-only{ 
-        @include display-flexDirection(flex, row);
         @include alignItems-justifyContent(center, space-around);
+        @include display-flexDirection(flex, row);
         @include width-height(100%, 0);
       } 
     }

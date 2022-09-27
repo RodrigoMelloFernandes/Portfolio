@@ -1,18 +1,18 @@
 @import 'src/scss/styles.scss';
 
 .stackBoxComponent{
-  @include width-height(80%, 10vh);
-  @include display-flexDirection(flex, row);
   @include alignItems-justifyContent(center, center);
+  @include display-flexDirection(flex, row);
+  @include width-height(80%, 10vh);
   //--------------------Desktop----------------------------->
   @include for-desktop-only{
     @include width-height(22%, 0);
   }
   &__img{
     @include width-height(75%, 0);
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
     filter: grayscale(100);
+    transition: all 0.2s ease-in-out;
     &:hover{
       filter: none;
       transform: scale(1.1);

@@ -8,7 +8,7 @@ import { LanguageContext } from 'context/LanguageContext';
 
 
 export default function AboutMe () {
-  const{language, setLanguage, HandleLanguage} = useContext(LanguageContext);
+  const{language, HandleLanguage} = useContext(LanguageContext);
   const idiom = HandleLanguage(language);
 
   return (

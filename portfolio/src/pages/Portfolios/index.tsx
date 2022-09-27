@@ -1,7 +1,7 @@
 import styles from './Portfolios.module.scss';
 import PortfoliosBoxComponent from './PortfoliosBoxComponent';
 import { motion } from 'framer-motion';
-import { bounceVariant} from 'animation/variants';
+import { bounceVariant } from 'animation/variants';
 import { useContext } from 'react';
 import { LanguageContext } from 'context/LanguageContext';
 

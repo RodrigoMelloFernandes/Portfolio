@@ -1,10 +1,7 @@
 import styles from './Hamburguer.module.scss';
 import { IMenuState } from 'types';
-import { useState } from 'react';
-
 
 export default function Hamburguer({menuMobile, setMenuMobile}:IMenuState) {
-
 
   return (
     <>

@@ -1,17 +1,17 @@
 @import '/src/scss/styles.scss';
 
 .footerSocialMBoxInBox{
-  @include display-flexDirection(flex, row);
   @include alignItems-justifyContent(center, center);
+  @include display-flexDirection(flex, row);
   @include width-height(18%, 3rem);
+  background-color: $Purple;
   border: 1px solid $Purple;
   margin-bottom: $m10;
   transition: all 350ms linear;
-  background-color: $Purple;
   &:hover{
     background-color: transparent;
-    cursor: pointer;
     color: $Purple;
+    cursor: pointer;
   }
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
@@ -25,8 +25,8 @@
 
   &__icon {
     @include width-height(43%, 0);
-    margin-bottom: $m10;
     color: $White;
+    margin-bottom: $m10;
     transition: all 350ms linear;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {

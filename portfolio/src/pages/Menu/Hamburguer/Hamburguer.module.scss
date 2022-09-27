@@ -3,10 +3,10 @@
 .menuHamburguer {
   @include alignItems-justifyContent(center, center);
   @include display-flexDirection(flex, column);
-  position: relative;
   @include width-height(13%, 40px);
   border: 1px solid $White;
   border-radius: 10%;
+  position: relative;
 
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
@@ -33,7 +33,5 @@
       top: 24px;
 
     }
-
   }
-  
 }

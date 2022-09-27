@@ -1,32 +1,32 @@
 @import '/src/scss/styles.scss';
 
 .contactBox{
-  @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(start, center);
+  @include display-flexDirection(flex, column);
   @include width-height(100%, 0);
 
     &__input {
-      @include width-height(100%, 3rem);
       @include fontSize-fontWeight(1.1rem, 300);
-      padding: 2.5%;
-      margin-bottom: 5%;
+      @include width-height(100%, 3rem);
       border: none;
       border-bottom: 1px solid $Purple;
-      font-family: 'Inconsolata', monospace;
-      outline: none;
       color: $Purple;
+      font-family: 'Inconsolata', monospace;
+      margin-bottom: $m5;
+      outline: none;
+      padding: $p2;
     }
 
     &__textArea {
       @include width-height(100%, 5rem);
       @include fontSize-fontWeight(1.1rem, 300);
-      padding: 2.5%;
-      margin-bottom: 5%;
       border: none;
       border-bottom: 1px solid $Purple;
-      font-family: 'Inconsolata', monospace;
-      outline: none;
       color: $Purple;
+      font-family: 'Inconsolata', monospace;
+      margin-bottom: $m5;
+      padding: $p2;
+      outline: none;
     }
 
     &__button {
@@ -45,7 +45,7 @@
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include width-height(25%, 0);
-      margin-bottom: 2.5%;
+      margin-bottom: $m2;
     }
   }
 }

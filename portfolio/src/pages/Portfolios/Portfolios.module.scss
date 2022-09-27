@@ -1,25 +1,25 @@
 @import 'src/scss/styles.scss';
 
 .portfolios{
-  @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
   @include width-height(100%, 0);
-  padding: 5%;
   background: linear-gradient($Black 17%, $White 15%); 
+  padding: $p5;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     background: linear-gradient($Black 42%, $White 19%);
-    padding: 5%
+    padding: $p5;
   }
 
   &__firstTitleComponent{
     @extend .titleh3;
-    padding-bottom: 5%;
     color: $White;
+    padding-bottom: $p5;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include fontSize-fontWeight(3.25rem, 0);
-      padding-bottom: 5%;
+      padding-bottom: $p5;
     }
 
   }
@@ -30,8 +30,8 @@
     @include for-desktop-only{
       @include display-flexDirection(flex, row);
       @include width-height(100%, 0);
-      position: relative;
       flex-wrap: wrap;
+      position: relative;
     }
   }
 }

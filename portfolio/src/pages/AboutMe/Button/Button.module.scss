@@ -2,15 +2,15 @@
 
 .button{
   @extend .button;
-  margin-top: 10%;
-  margin-bottom: 10%;
   align-self: flex-start;
+  margin-bottom: $m10;
+  margin-top: $m10;
   transition: all 350ms linear;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
     align-self: center;
-    margin-top: 5%;
     margin-bottom: 5%;
+    margin-top: 5%;
   }
 
   &:hover &__link{
@@ -18,8 +18,8 @@
   }
 
   &__link{
-    text-decoration: none;
     color: $White;
+    text-decoration: none;
     &:hover{
       color: $Purple;
       transition: all 350ms linear;

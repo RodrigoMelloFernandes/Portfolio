@@ -3,14 +3,14 @@
 
 .titleh3{
   @include fontSize-fontWeight(3.125rem, 700); 
-  text-align: center;
   color: $TitleBlack;
+  text-align: center;
 }
 
 .titleh4{
   @include fontSize-fontWeight(1.1rem, 700); 
   @include width-height(100%, 0);
+  color: $Purple;
   line-height: 1.5rem;
   text-align: center;
-  color: $Purple;
 }

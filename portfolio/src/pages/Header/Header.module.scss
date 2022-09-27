@@ -1,17 +1,16 @@
 @import 'src/scss/styles.scss';
 
 .header{
-  @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
   @include headerBackgroundImage;
 
-
   .menu{
-    @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    width: 100%;
+    @include display-flexDirection(flex, row);
+    @include width-height(100%, 0);
     background-color: $Black;
-    padding: 5% 5%;
+    padding: $pl5;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
       @include display-flexDirection(flex, row);
@@ -22,13 +21,13 @@
 
     &__idiomButton{
       @extend .button;
-      width: 30%;
+      @include width-height(30%, 0);
       margin-left: 14%;
       margin-right: 14%;
       //--------------------Desktop----------------------------->
       @include for-desktop-only{
-        width: 15%;
-        margin-left: 2.5%;
+        @include width-height(15%, 0);
+        margin-left: $m2;
         margin-right: 0%;
         margin-top: 5%;
         position: fixed;
@@ -37,8 +36,8 @@
   
     &__logo{
       @include fontSize-fontWeight(1.5rem, 700);
-      text-decoration: none;
       color: $White;
+      text-decoration: none;
       transition: all 0.35s linear;
       &:hover {
         color: $Purple;
@@ -51,46 +50,46 @@
   }
   
   &__stacksIconsfatherBox{
-    @extend .paddingBox;
-    @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(flex-start, space-between);
+    @include display-flexDirection(flex, row);
     @include width-height(100%, 0);
+    padding: $p5;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      @include display-flexDirection(flex, column-reverse);
       @include alignItems-justifyContent(center, center);
-      padding: 10%;
+      @include display-flexDirection(flex, column-reverse);
+      padding: $p10;
     }
   }
 
   &__stacksIconsBox{
-    @include width-height(20%, 0);
     @include display-flexDirection(flex, column);
+    @include width-height(20%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, center);
+      @include display-flexDirection(flex, row);
       @include width-height(70%, 0);
-      padding-top: 5%;
+      padding-top: $p5;
     }
     
   }
   &__TitleBox{
-    @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, flex-start);
+    @include display-flexDirection(flex, column);
     @include width-height(80%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
-      @include display-flexDirection(flex, column);
       @include alignItems-justifyContent(center, flex-start);
+      @include display-flexDirection(flex, column);
       @include width-height(100%, 0);
     }
     &___firstTitle{
       @include fontSize-fontWeight(2.7rem, 700);
       color: $White;
       opacity: 0.9;
+      padding-bottom: $p2;
       text-align: end;
-      padding-bottom: 2.5%;
       
       
       //--------------------Desktop----------------------------->
@@ -102,18 +101,18 @@
 
       &:nth-child(2){
         @include fontSize-fontWeight(.938rem, 0);
-        padding-bottom: 5%;
-        color: $TitleBlack;
         align-self: flex-end;
-        padding-top: 5%;
+        color: $TitleBlack;
+        padding-bottom: $p5;
+        padding-top: $p5;
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
           @include fontSize-fontWeight(1.1rem, 0);
-          text-align: center;
-          padding-bottom: 2.5%;
-          margin-top: 0%;
-          padding-top: 0%;
           align-self: center;
+          margin-top: 0%;
+          padding-bottom: $p2;
+          padding-top: 0%;
+          text-align: center;
         }
       }
     }
@@ -121,28 +120,28 @@
     &___secondTitle{
       @include fontSize-fontWeight(1.9rem, 600);
       color: $White;
-      opacity: 0.9;
       line-height: 2.2rem;
+      opacity: 0.9;
+      padding-bottom: $p2;
       text-align: end;
-      padding-bottom: 2.5%;
       //--------------------Desktop----------------------------->
       @include for-desktop-only {
         @include fontSize-fontWeight(1.8rem, 600);
-        text-align: center;
         padding-bottom: 1.5%;
+        text-align: center;
       }
       
       &:nth-of-type(2){
         @include fontSize-fontWeight(1rem, 0);
-        padding-bottom: 5%;
-        color: black;
         align-self: flex-end;
+        color: black;
+        padding-bottom: $p5;
         //--------------------Desktop----------------------------->
         @include for-desktop-only {
           @include fontSize-fontWeight(1.1rem, 0);
-          text-align: center;
-          padding-bottom: 1.5%;
           align-self: center;
+          padding-bottom: 1.5%;
+          text-align: center;
         }
       }
     }

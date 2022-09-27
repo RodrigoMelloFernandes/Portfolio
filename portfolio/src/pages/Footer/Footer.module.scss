@@ -1,15 +1,15 @@
 @import 'src/scss/styles.scss';
 
 .footer{
-  @include display-flexDirection(flex, column);
   @include alignItems-justifyContent(center, center);
+  @include display-flexDirection(flex, column);
   padding: 5%;
   padding-top: 5%;
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
+    padding-bottom: 0;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 0;
   }
 
   &__firstTitleComponent {
@@ -24,23 +24,23 @@
 
 
   .footerSocialMBoxAndCopyRightBoxDesktopBox {
-    @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
-    padding-top: 5%;
+    @include display-flexDirection(flex, column);
     padding-bottom: 5%;
+    padding-top: 5%;
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
-      @include display-flexDirection(flex, row);
       @include alignItems-justifyContent(center, space-around);
+      @include display-flexDirection(flex, row);
       @include width-height(100%, 0);
-      padding-top: 5%;
       padding-bottom: 5%;
+      padding-top: 5%;
     }
   }
 
   &__footerSocialMBox{
-    @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
+    @include display-flexDirection(flex, row);
     @include width-height(75%, 0);
     //--------------------Desktop----------------------------->
     @include for-desktop-only {
@@ -55,6 +55,5 @@
         color: $Purple;
       }
     }
-
   }
 }
