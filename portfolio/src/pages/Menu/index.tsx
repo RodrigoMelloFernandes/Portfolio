@@ -13,8 +13,7 @@ export default function Menu () {
   
   const [menuMobile, setMenuMobile] = useState(false);
   const [fixedMenu, setFixedMenu] = useState(false);
-  console.log(fixedMenu);
-
+  
   function scrollPosition () {
     if(window.scrollY > 50) {
       setFixedMenu(true);

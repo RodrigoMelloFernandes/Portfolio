@@ -6,34 +6,25 @@
   @include alignItems-justifyContent(center, space-between);
   background-color: $Black;
   padding: 5% 5%;
-
   top: -100px;
-  
   //--------------------Desktop----------------------------->
   @include for-desktop-only {
+    @include width-height(100%, 80px);
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    @include width-height(100%, 0);
     padding: 0;
     background-color: transparent;
     position: fixed;
   }
+  
 
   &__stickyMenu {
-
     transform: translateY(100px);
-
     position: fixed;
     z-index: 9;
     background-color: $Black;
-    border-bottom: none;
     transition: all 1s linear;
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only{
-      background-color: $Black;
-      border-bottom: none;
-      transition: all 1s linear;
-    }
+
   }
 
   &__idiomButton{
@@ -43,8 +34,6 @@
     @include for-desktop-only{
       width: 15%;
       margin-left: 2.5%;
-      margin-bottom: 1.5%;
-      margin-top: 1.5%;
     }
   }
 
@@ -108,7 +97,6 @@
       @include alignItems-justifyContent(center, flex-end);
       position: fixed;
       top: 0;
-      border-top: none;
       visibility: visible;
       padding: 2.5rem 5%;
       overflow: hidden;
@@ -117,12 +105,11 @@
   
     .NavListOpen__Ul{
       @include display-flexDirection(flex, column);
-      
       //--------------------Desktop----------------------------->
       @include for-desktop-only{ 
         @include display-flexDirection(flex, row);
         @include alignItems-justifyContent(center, space-around);
-        @include width-height(100%, 5vh);
+        @include width-height(100%, 0);
       } 
     }
   }
